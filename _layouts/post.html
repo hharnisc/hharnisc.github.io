@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="post-details">
+    <div>
+        {{ page.date | date: "%-d %B %Y" }}
+    </div>
+    <div>
+        <strong>Categories</strong>
+
+        {% for tag in page.tags %}
+            <span>{{ tag }}</span>
+        {% endfor %}
+    </div>
+</div>
+<div class="post">
+    <h1 class="post-title"> {{ page.title }} </h1>
+    {% if page.subtitle %}
+    <h3 class="post-subtitle">{{ page.subtitle }}</h3>
+    {% endif %}
+    <div class="post-space"></div>
+    {{ content }}
+</div>
+<div class="related-posts">
+    <ul class="posts">
+        <h3 class="title">Related Posts</h3>
+        {% for post in site.related_posts limit:3 %}
+            <li>
+                <div class="details">
+                    {{ post.date | date_to_string }} &middot; {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " min read" }}
+                </div>
+                <a href="{{post.url}}">
+                    <h1 class="post-title">{{ post.title }}</h1>
+                </a>
+                {% unless forloop.last %}
+                <div class="divider">&bull;</div>
+                {% endunless %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

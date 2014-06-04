@@ -1,1 +1,24 @@
-Hi
+---
+layout: default
+title: Harrison Harnisch
+---
+<ul class="posts">
+    {% for post in site.posts %}
+        <li>
+            <div class="details">
+                {{ post.date | date_to_string }} &middot; {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " min read" }}
+            </div>
+            <a href="{{post.url}}">
+                <h1 class="post-title">{{ post.title }}</h1>
+            </a>
+            <p>
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                &raquo;
+                <a href="{{post.url}}">read more</a>
+            </p>
+            {% unless forloop.last %}
+                <div class="divider">&bull;</div>
+            {% endunless %}
+        </li>
+    {% endfor %}
+</ul>

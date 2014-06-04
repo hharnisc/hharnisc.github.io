@@ -1,0 +1,218 @@
+body, html {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+::selection {
+    background: #CB59E8;
+    color: #444;
+}
+
+/* Basic element customization */
+
+a {
+    color: inherit;
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: #b861b8;
+}
+
+h1,h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h3,h4,h5,h6 {
+    font-family: 'Droid Serif', serif;
+    color: #999;
+    font-weight: 100;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: justify;
+}
+
+p a {
+    text-decoration: none;
+    border-bottom: 1px dotted #888;
+}
+
+blockquote {
+    border-left: 2px solid #b861b8;
+    padding-left: 10px;
+    font-size: 16px;
+    font-style:italic;
+    margin: 0px;
+}
+
+blockquote p{
+    font-size: 16px;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding:20px;
+    margin: 0 35px;
+}
+
+.header .title {
+    font-size: 18px;
+}
+
+.title{
+    font-family: 'Oswald', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Droid Sans', sans-serif;
+    color: #999;
+    padding-top: 10px;
+}
+
+.subtitle a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.content {
+    margin: 20px auto;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+/* Post */
+
+.post {
+    float: right;
+    max-width: 650px;
+    padding-bottom: 10px;
+}
+
+.post li {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.post-details {
+    font-size: 14px;
+    padding-left: 5px;
+    border-left: 1px solid #999;;
+    color: #888;
+}
+
+.post-title {
+    margin-bottom: 0;
+}
+
+.post-subtitle {
+    margin-top: 5px;
+}
+
+.post-space {
+    margin: 30px;
+}
+
+.related-posts {
+    clear: both;
+    padding-top: 5px;
+    border-top: 1px solid #eee;
+}
+
+.related-posts .posts li {
+    margin: 0;
+}
+
+.related-posts .title {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+/* posts */
+
+.posts {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
+.posts .details{
+    font-size: 18px;
+    font-family: 'Droid Sans', sans-serif;
+    color: #999;
+}
+
+.posts .post-title {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.posts li {
+    margin: 0 20px;
+}
+
+.posts .divider{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.about-me {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.img-me {
+    background-image: url("../images/me.png");
+    background-size: contain;
+    width: 80vw;
+    height: 80vw;
+    max-height: 400px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icon {
+    height:50px;
+    width:50px;
+    display: inline-block;
+}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.github {
+    background-image: url("../images/github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.linkedin {
+    background-image: url("../images/linkedin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
