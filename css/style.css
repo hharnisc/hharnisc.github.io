@@ -94,12 +94,18 @@ blockquote p{
     float: right;
     max-width: 650px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .post li {
     color: #555;
     font-size: 14px;
     line-height: 1.5em;
+}
+
+p img {
+    margin: 0 auto;
+    display: inherit;
 }
 
 .post-details {
