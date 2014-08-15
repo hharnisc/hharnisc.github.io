@@ -6,7 +6,7 @@ title: Harrison Harnisch
     {% for post in site.posts %}
         <li>
             <div class="details">
-                {{ post.date | date_to_string }} &middot; {{ post.content | number_of_words | plus: 250 | divided_by: 180 | append: " min read" }}
+                {{ post.date | date_to_string }} &middot; <span class="time">{{ post.content | number_of_words | plus: 250 | divided_by: 180.0}}</span> min read
             </div>
             <a href="{{post.url}}">
                 <h1 class="post-title">{{ post.title }}</h1>
