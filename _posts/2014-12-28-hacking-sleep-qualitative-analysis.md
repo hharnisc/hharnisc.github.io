@@ -63,4 +63,4 @@ Follow up observations
 2. 2 cups of coffee
 3. No mid-day dip in energy
 
-The take away is that sleep has a **huge** impact on your well-being, and that it doesn't take much to improve the quality of your sleep. I've felt more energized and focused when taking on the days tasks (coding, designing, housework, etc) and I've had more consisten amounts of energy throughout the day. These seem like things that just about anyone can do - provided enough flexibility to get used to waking up without an alarm the first week. If you've got any other sleep hacks send me a tweet [@hjharnis](https://twitter.com/hjharnis)
+The take away is that sleep has a **huge** impact on your well-being, and that it doesn't take much to improve the quality of your sleep. I've felt more energized and focused when taking on the days tasks (coding, designing, housework, etc) and I've had more consistent amounts of energy throughout the day. These seem like things that just about anyone can do - provided enough flexibility to get used to waking up without an alarm the first week. If you've got any other sleep hacks send me a tweet [@hjharnis](https://twitter.com/hjharnis)
