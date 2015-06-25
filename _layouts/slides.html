@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+<script>
+  // async load the page slides
+  var url = "/slides/{{page.slides}}";
+  var jsonFile = new XMLHttpRequest();
+      jsonFile.open("GET", url, true);
+      jsonFile.send();
+
+      jsonFile.onreadystatechange =
+        function(){
+          if (jsonFile.readyState== 4 && jsonFile.status == 200){
+            var slideshow = remark.create({source: jsonFile.responseText});
+          }
+        }
+</script>
