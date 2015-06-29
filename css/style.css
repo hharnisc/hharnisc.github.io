@@ -242,3 +242,80 @@ p img {
 pre {
   line-height: 1.3em;
 }
+
+/* slides */
+
+.remark-slide-content {
+  font-size: 1.5em;
+}
+
+.remark-slide-content h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.remark-slide-content h1 { font-size: 2.8em; }
+.remark-slide-content h2 { font-size: 1.8em; }
+.remark-slide-content h3 {
+  font-size: 1em;
+  font-weight: 300;
+}
+.remark-code-line {
+  line-height: 1.5;
+  font-size: 0.7em;
+}
+
+.inverse-slide {
+  background: #272822;
+  color: #f3f3f3;
+}
+
+.red-slide {
+  background: red;
+  color: white;
+}
+
+/* Two-column layout */
+.left-column {
+  width: 30%;
+  float: left;
+}
+
+.right-column {
+  width: 65%;
+  float: right;
+  padding-top: 1em;
+}
+
+.right-column-middle {
+  width: 65%;
+  float: right;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.footnote {
+  position: absolute;
+  right: 7em;
+  bottom: 5em;
+}
+
+.purple-text {
+  color: #CB59E8;
+}
+
+.blue-text {
+  color: #457df5;
+}
+
+.elasticsearch-text {
+  color: #31beb1;
+}
+
+.mongodb-text {
+  color: #6ba442;
+}
+
+.meteor-text {
+  color: #de4f4f;
+}

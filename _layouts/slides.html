@@ -13,7 +13,10 @@ layout: base
       jsonFile.onreadystatechange =
         function(){
           if (jsonFile.readyState== 4 && jsonFile.status == 200){
-            var slideshow = remark.create({source: jsonFile.responseText});
+            var slideshow = remark.create({
+              source: jsonFile.responseText,
+              highlightStyle: 'googlecode'
+            });
           }
         }
 </script>
