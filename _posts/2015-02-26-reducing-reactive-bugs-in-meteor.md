@@ -7,7 +7,7 @@ tags:
 
 Since working with meteor in production at [Respondly](http://hharnisc.github.io/2014/08/15/punk-rock-not-corporate-rock.html), a particularly difficult class of bugs has presented itself. It's related to Meteor's fantastic reactive [Tracker](https://www.meteor.com/tracker) package. As more people contribute to a codebase, knowledge tends to spread out across the team making it more difficult for one person to contribute. Here's an example of the problematic pattern:
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 Tracker.autorun(function() {
   var x = Meteor.session.get('session-var'); // reactive
   updateWithSession(x); // ??? not sure if reactive ???
@@ -18,7 +18,7 @@ It's not immediately obvious what is reactive in this example. The function **up
 
 _I'm proposing a simple change to better indicate what should trigger the **autorun**:_
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 Tracker.autorun(function() {
   var x = Meteor.session.get('session-var'); // reactive
   Tracker.nonreactive(function(){
@@ -31,7 +31,7 @@ This creates a clear degree of separation of reactive vs non-reactive, and it's 
 
 Now let's say there's something inside **updateWithSession** that you'd like to react to, simply break that out of the function like this:
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 Tracker.autorun(function() {
   var x = Meteor.session.get('session-var'); // reactive
   var y = Meteor.session.get('session-var-2'); // reactive

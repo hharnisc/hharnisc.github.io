@@ -35,7 +35,7 @@ Here's an overview on how this is achieved inside of a Chrome tab. Digging into 
 
 First a connection is established between the native runtime and the remote runtime via Websocket. In the initialization process a `sessionID` is exchanged and the JavaScript runtime is reset to a clean state.
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 // handler for message type `prepareJSRuntime`
 'prepareJSRuntime': function(message) {
   window.onbeforeunload = undefined;
@@ -48,7 +48,7 @@ First a connection is established between the native runtime and the remote runt
 
 The scripts are injected into the runtime so they can be executed later.
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 // handler for message type `executeApplicationScript`
 'executeApplicationScript': function(message, sendReply) {
   for (var key in message.inject) {
@@ -70,7 +70,7 @@ function loadScript(src, callback) {
 
 After the JavaScript runtime has all of the scripts injected it's ready to start running commands remotely. These commands are sent in batches and the results are reported back to the native runtime over the Websocket.
 
-{% highlight javascript %}
+{% highlight javascript linenos=table %}
 // handler for message type `executeJSCall`
 'executeJSCall': function(message, sendReply) {
   var returnValue = null;

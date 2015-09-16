@@ -250,7 +250,9 @@ pre {
   font-size: 1.5em;
 }
 
-.remark-slide-content h1, h2, h3 {
+.remark-slide-content h1,
+.remark-slide-content h2,
+.remark-slide-content h3 {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 .remark-slide-content h1 { font-size: 2.8em; }
