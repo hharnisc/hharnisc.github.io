@@ -144,6 +144,14 @@ end
 
 {% endhighlight %}
 
+**Dockerfile**
+
+{% highlight Dockerfile linenos=table %}
+FROM mhart/alpine-node
+WORKDIR /app
+COPY app/ .
+{% endhighlight %}
+
 **docker-compose.yml**
 
 {% highlight YAML linenos=table %}
@@ -165,6 +173,14 @@ vagrant up
 echo "⚡⚡ TIME TO BUILD COOL STUFF ⚡⚡"
 vagrant gatling-rsync-auto
 {% endhighlight %}
+
+#### A Yeoman Generator
+
+I've created a [Yeoman](http://yeoman.io/) generator to capture this workflow.
+
+[https://github.com/hharnisc/generate-service](https://github.com/hharnisc/generate-service)
+
+It generates a simple **Node microservice** (with hot reloading in the container), a central logging (**ELK stack**) service and uses **RabbitMQ** to communicate between services. Please use this for informational purposes or as a starting point for your project. It's not quite ready for production. I'm planning on publishing this to NPM when I get some more feedback, I love PRs!
 
 #### Conclusion
 
