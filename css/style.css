@@ -276,6 +276,11 @@ pre {
   color: white;
 }
 
+.blue-slide {
+  background: blue;
+  color: white;
+}
+
 /* Two-column layout */
 .left-column {
   width: 30%;
@@ -311,6 +316,10 @@ pre {
   color: #457df5;
 }
 
+.green-text {
+  color: #27AE60;
+}
+
 .elasticsearch-text {
   color: #31beb1;
 }
@@ -321,4 +330,48 @@ pre {
 
 .meteor-text {
   color: #de4f4f;
+}
+
+.react-text {
+  color: #61dafb;
+}
+
+/* Tables */
+table {
+  padding: 0;
+  border-collapse: collapse;
+}
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
 }
