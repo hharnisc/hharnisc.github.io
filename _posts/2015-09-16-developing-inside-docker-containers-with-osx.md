@@ -15,7 +15,7 @@ For my efforts, I was able to achieve a development environment with the followi
 - one command development environment setup
 - logging, monitoring and debugging tools when developing
 
-####Day 1: Docker Is Great!
+#### Day 1: Docker Is Great!
 
 Even the Docker haters have this moment when first using Docker: 😻 You find yourself thinking _I'm going to **Dockerize** Everything_, so you add a `Dockerfile` to your Node app and build it.
 
@@ -34,7 +34,7 @@ Now your deployment pipeline gets a little simpler since you can use one of a fe
 
 You wonder what could've gone wrong. You've been using Docker to deployments so it should have just worked. But you've been developing and testing on your local machine in a completely different environment. You're basically just using Docker to package your app.
 
-####Let's Build Stuff Inside Docker Containers
+#### Let's Build Stuff Inside Docker Containers
 
 Now you're a little smarter and use [Docker Compose](https://docs.docker.com/compose/) to mount a volume from your host machine inside your container.
 
@@ -82,13 +82,13 @@ The app now starts up with `nodemon` but it doesn't restart when you change code
 
 Now this is where things got hairy and I imagine many fell off the cliff. But I can assure you there are good things ahead, great things even. I spent a couple nights irritable and agitated trying several different approaches so (hopefully) you don't have to.
 
-####I-notify You When I Feel Like It
+#### I-notify You When I Feel Like It
 
 So nodemon (and many other file watching tools) use [Inotify](https://en.wikipedia.org/wiki/Inotify) to detect file changes. They do this because it's fast. It's part of the Linux kernel subsystem and publishes changes to subscribed applications rather than having to scan the files for changes.
 
 After some StackOverflowing, Googling, and Github Issuing I stumbled across this [won't fix](https://www.virtualbox.org/ticket/10660) bug for Virtualbox. I translates to **shared folders can't trigger Inotify events**. DOUBLE SHIT. This means there's a whole class of syncing tools that simply won't work.
 
-####There's A Light
+#### There's A Light
 
 Just because virtualbox shared folders can't generate Inotify events doesn't mean that Inotify events aren't fired within the container. If you change a file on the container with `vim` this does cause nodemon to trigger a restart. So it's possible that using a syncing tool could solve this problem. I evaluated the following tools:
 
