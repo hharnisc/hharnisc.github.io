@@ -5,7 +5,7 @@ tags:
 - Meteor
 ---
 
-Since working with meteor in production at [Respondly](http://hharnisc.github.io/2014/08/15/punk-rock-not-corporate-rock.html), a particularly difficult class of bugs has presented itself. It's related to Meteor's fantastic reactive [Tracker](https://www.meteor.com/tracker) package. As more people contribute to a codebase, knowledge tends to spread out across the team making it more difficult for one person to contribute. Here's an example of the problematic pattern:
+Since working with meteor in production at [Respondly](//hharnisc.github.io/2014/08/15/punk-rock-not-corporate-rock.html), a particularly difficult class of bugs has presented itself. It's related to Meteor's fantastic reactive [Tracker](https://www.meteor.com/tracker) package. As more people contribute to a codebase, knowledge tends to spread out across the team making it more difficult for one person to contribute. Here's an example of the problematic pattern:
 
 {% highlight javascript linenos=table %}
 Tracker.autorun(function() {
