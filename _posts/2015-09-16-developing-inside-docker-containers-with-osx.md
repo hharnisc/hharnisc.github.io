@@ -191,3 +191,5 @@ There are a few takeaways from this experience:
 - After going through walkthroughs, blog posts, and documentation it's clear that there are 2 distinct groups using Docker containers, **Software Developers** and **Ops/Infra** People.
 
 Docker has given language to Software Developers and Ops/Infra types that enables clearer communication. As time goes on I think the line will blur between these two disciplines because of tools like Docker. *And this is a good thing* because these are problems worth solving. It seems like someone new comes along every day and fills in one more piece of the pipeline -- now we just need to connect it all.
+
+UPDATE: Check out my follow up post [Developing Inside Docker Containers with OS X (2016)](/2016/06/16/developing-inside-docker-containers-with-osx-2016.html) and the new [Yeoman generator](https://github.com/hharnisc/generator-service-native-docker). Much has been changed in the Docker beta release!

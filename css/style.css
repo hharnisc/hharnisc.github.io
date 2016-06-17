@@ -7,7 +7,7 @@ body, html {
 
 ::selection {
     background: #CB59E8;
-    color: #444;
+    color: #eee;
 }
 
 /* Basic element customization */
