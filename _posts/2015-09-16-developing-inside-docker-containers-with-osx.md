@@ -21,13 +21,13 @@ Even the Docker haters have this moment when first using Docker: 😻 You find y
 
 **Dockerfile**
 
-{% highlight Dockerfile linenos=table %}
+```Dockerfile
 FROM mhart/alpine-node
 WORKDIR /app
 COPY app/ .
 EXPOSE 8080
 CMD ["npm", "start", "--", "--port", "8080"]
-{% endhighlight %}
+```
 
 
 Now your deployment pipeline gets a little simpler since you can use one of a few services that can run containers and throw your chef scripts under a bus. But then **it** happens, you deploy a container to production and it **doesn't work**.
@@ -40,15 +40,15 @@ Now you're a little smarter and use [Docker Compose](https://docs.docker.com/com
 
 **Dockerfile**
 
-{% highlight Dockerfile linenos=table %}
+```Dockerfile
 FROM mhart/alpine-node
 WORKDIR /app
 COPY app/ .
-{% endhighlight %}
+```
 
 **docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```yaml
 web:
   build: .
   command: "npm start"
@@ -56,19 +56,19 @@ web:
     - "8080:8080"
   volumes:
     - ./app:/app
-{% endhighlight %}
+```
 
 You can easily build and run docker containers with Docker Compose
 
-{% highlight bash linenos=table %}
+```shell
 $ docker-compose build ; docker-compose up
-{% endhighlight %}
+```
 
 With this change the mounted folder on the Docker container is kept in sync with the host. You'd expect that you should be able to use one of the continuous build tools for node like [nodemon](http://nodemon.io/) to streamline the development process. So you modify your docker-compose file
 
 **docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```yaml
 web:
   build: .
   command: sh -c 'npm install -g nodemon ; nodemon index.js'
@@ -76,7 +76,7 @@ web:
     - "8080:8080"
   volumes:
     - ./app:/app
-{% endhighlight %}
+```
 
 The app now starts up with `nodemon` but it doesn't restart when you change code. SHIT.
 
@@ -110,7 +110,7 @@ Here's what my Vagrantfile, docker-compose.yml and (optional) bash script that l
 
 **Vagrantfile**
 
-{% highlight Ruby linenos=table %}
+```ruby
 Vagrant.configure("2") do |config|
   # feed the monster
   config.vm.provider "virtualbox" do |v|
@@ -142,19 +142,19 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 8080, host: 8080 # service
 end
 
-{% endhighlight %}
+```
 
 **Dockerfile**
 
-{% highlight Dockerfile linenos=table %}
+```Dockerfile
 FROM mhart/alpine-node
 WORKDIR /app
 COPY app/ .
-{% endhighlight %}
+```
 
 **docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```yaml
 app:
   build: .
   command: sh -c 'npm install --unsafe-perm ; npm install -g gulp ; gulp dev'
@@ -162,17 +162,17 @@ app:
     - "8080:8080"
   volumes:
     - /sync/service:/service #/sync is defined in the vagrant file
-{% endhighlight %}
+```
 
 **start-dev.sh**
 
-{% highlight Bash linenos=table %}
+```shell
 #!/bin/bash
 # start vagrant and the vagrant sync tool
 vagrant up
 echo "⚡⚡ TIME TO BUILD COOL STUFF ⚡⚡"
 vagrant gatling-rsync-auto
-{% endhighlight %}
+```
 
 #### A Yeoman Generator
 
