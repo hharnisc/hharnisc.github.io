@@ -16,13 +16,14 @@ Let's say you're staring with a monolithic setup, you've got one server and one 
 
 The endpoint you'd like to test is `/create` and all it should do is store a some data in the database. Seems simple enough. So you write a bash script that [CURL](https://en.wikipedia.org/wiki/CURL)s and endpoint, and then queries the database (exit 0 for OK, exit 1 for FAIL). It's easy AND most importantly it *works*.
 
-{% highlight bash linenos=table %}
+```shell
 curl http://localhost:8000/create
-COUNT = `mysql --user="$user" --password="$password" --database="$database" --execute="SELECT COUNT(*) FROM table_name;"`
+COUNT = `mysql --user="$user" --password="$password" --database="$database" \
+  --execute="SELECT COUNT(*) FROM table_name;"`
 if [[ $COUNT -ne 1 ]]; then
   exit 1
 fi
-{% endhighlight %}
+```
 
 
 But there's a lot of hidden dependencies that make this extremely inconsistent.
@@ -35,14 +36,16 @@ But there's a lot of hidden dependencies that make this extremely inconsistent.
 
 Let's say you add a line to your bash script to reset your data.
 
-{% highlight bash linenos=table %}
-mysql --user="$user" --password="$password" --database="$database" --execute="TRUNCATE table table_name"
+```shell
+mysql --user="$user" --password="$password" --database="$database" \
+  --execute="TRUNCATE table table_name"
 curl http://localhost:8000/create
-COUNT = `mysql --user="$user" --password="$password" --database="$database" --execute="SELECT COUNT(*) FROM table_name;"`
+COUNT = `mysql --user="$user" --password="$password" --database="$database"\
+  --execute="SELECT COUNT(*) FROM table_name;"`
 if [[ $COUNT -ne 1 ]]; then
   exit 1
 fi
-{% endhighlight %}
+```
 
 This eliminates the last hidden dependency (existing database data), but also introduces a pretty nasty side effect. It's only a side effect because the local **development** database is shared with the **test** database. So every time you run your integration test, you lose all of your development data 😭. This may seem obvious, but in practice this setup still exists. But it doesn't have to be this way. From here on out, I'll walk through an example built on top of Docker Compose that addresses all of the issues listed above. For this example I'll use Node for the app framework and RethinkDB for the database, but there's no reason why you couldn't choose another stack.
 
@@ -54,7 +57,7 @@ Let's take a page from [Martin Fowler's microservice testing playbook](http://ma
 
 For clarity I'd like to point out the file structure since we're going to have multiple `Dockerfile` in the same project.
 
-{% highlight text %}
+```text
 integration-test/
   Dockerfile
   index.js
@@ -64,7 +67,7 @@ integration-test/
 index.js
 package.json
 Dockerfile
-{% endhighlight %}
+```
 
 Let's walk through each component of the integration-test.
 
@@ -74,7 +77,7 @@ Sometimes it's nice to *lose all your data*, and when you're running tests it's 
 
 **integration-test/docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```YAML
 version: '2'
 
 services:
@@ -82,7 +85,7 @@ services:
     image: rethinkdb
     expose:
       - "28015"
-{% endhighlight %}
+```
 
 Keep this concept in mind, because we're going to use it soon.
 
@@ -92,18 +95,18 @@ The next step is to containerize the application you'd like to test. It needs to
 
 **Dockerfile**
 
-{% highlight Dockerfile linenos=table %}
+```Dockerfile
 FROM mhart/alpine-node
 WORKDIR /service
 COPY package.json .
 RUN npm install
 COPY index.js .
-{% endhighlight %}
+```
 
 
 **integration-test/docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```YAML
 version: '2'
 
 services:
@@ -118,7 +121,7 @@ services:
     image: rethinkdb
     expose:
       - "28015"
-{% endhighlight %}
+```
 
 At this point you could sanity check the services with [docker-compose up](https://docs.docker.com/compose/reference/up/) and go to http://localhost:8080 (so long as you had a server and routes wired up).
 
@@ -129,7 +132,7 @@ Now we've got our database and application, let's build the testing container. T
 
 **integration-test/index.js**
 
-{% highlight javascript linenos=table %}
+```javascript
 import test from 'tape';
 import requestPromise from 'request-promise';
 
@@ -147,7 +150,8 @@ test('POST /create', (t) => {
     .then(() => (
       requestPromise({
         method: 'POST',
-        uri: 'http://my-service:8080/create', // yes! we can use the service name in the docker-compose.yml file
+        // yes! we can use the service name in the docker-compose.yml file
+        uri: 'http://my-service:8080/create',
         body: {
           thing: 'this thing',
         },
@@ -175,25 +179,25 @@ test('POST /create', (t) => {
 });
 
 after('after', (t) => {/*one time setup*/});
-{% endhighlight %}
+```
 
 The test `Dockerfile` looks about the same as the app Dockerfile.
 
 **integration-test/Dockerfile**
 
-{% highlight Dockerfile linenos=table %}
+```Dockerfile
 FROM mhart/alpine-node
 WORKDIR /integration
 COPY package.json .
 RUN npm install
 COPY index.js .
-{% endhighlight %}
+```
 
 Now we add the test app to the docker-compose.yml file.
 
 **integration-test/docker-compose.yml**
 
-{% highlight YAML linenos=table %}
+```YAML
 version: '2'
 
 services:
@@ -212,7 +216,7 @@ services:
     image: rethinkdb
     expose:
       - "28015"
-{% endhighlight %}
+```
 
 So here's the cool part, when you run `docker-compose up` a few things happen
 
@@ -229,7 +233,7 @@ With all of the automation in place we need to tie everything together and do so
 
 **integration-test/test.sh**
 
-{% highlight bash linenos=table %}
+```shell
 # define some colors to use for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -240,7 +244,8 @@ cleanup () {
   docker-compose -p ci rm -f --all
 }
 # catch unexpected failures, do cleanup and output an error message
-trap 'cleanup ; printf "${RED}Tests Failed For Unexpected Reasons${NC}\n"' HUP INT QUIT PIPE TERM
+trap 'cleanup ; printf "${RED}Tests Failed For Unexpected Reasons${NC}\n"'\
+  HUP INT QUIT PIPE TERM
 # build and run the composed services
 docker-compose -p ci build && docker-compose -p ci up -d
 if [ $? -ne 0 ] ; then
@@ -261,25 +266,25 @@ fi
 cleanup
 # exit the script with the same code as the test service code
 exit $TEST_EXIT_CODE
-{% endhighlight %}
+```
 
 #### Examples
 
 For a complete example take a look at [auth-service](https://travis-ci.org/hharnisc/auth-service). All you need to do to see it in action:
 
-{% highlight bash linenos=table %}
+```shell
 git clone https://github.com/hharnisc/auth-service.git
 cd auth-service
 npm test
-{% endhighlight %}
+```
 
 For more complicated example (multiple layers of microservices) take a look at [login-service](https://github.com/hharnisc/login-service).
 
-{% highlight bash linenos=table %}
+```shell
 git clone https://github.com/hharnisc/login-service.git
 cd login-service
 npm test
-{% endhighlight %}
+```
 
 #### Use This Now (Yeoman Generator)
 

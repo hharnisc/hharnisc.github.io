@@ -105,7 +105,7 @@ blockquote p{
 }
 
 p img {
-    margin: 0 auto;
+    margin: 30px auto;
     display: inherit;
 }
 
@@ -374,4 +374,8 @@ table tr th :first-child, table tr td :first-child {
 
 table tr th :last-child, table tr td :last-child {
   margin-bottom: 0;
+}
+
+.highlight {
+  margin: 30px 0;
 }
