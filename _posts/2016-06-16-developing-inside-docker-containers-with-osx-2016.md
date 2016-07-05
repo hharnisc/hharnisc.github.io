@@ -40,7 +40,7 @@ In the beta, the Docker team has swapped out Virtualbox for the xhyve hypervisor
 
 With Docker beta I was able to remove **ALL** of the extra cruft required to get hot reload working. Vagrant *gone*, rsync *gone*. That is to say I ran `docker-compose up` with a development container, changed some code, and everything *just worked*. I could give the entire Docker team a hug and a handshake, but I won't, because that's weird. Here's an example `docker-compose.yml` file:
 
-{% highlight YAML linenos=table %}
+```yaml
 version: '2'
 
 services:
@@ -51,7 +51,7 @@ services:
       - "8080:8080"
     volumes:
       - ./service/src:/service/src
-{% endhighlight %}
+```
 
 That's about it, run your docker container in dev mode (for me that was using nodemon to watch for src changes) and mount the host volume. This will work in Docker for Mac, Linux, and would assume Windows.
 
