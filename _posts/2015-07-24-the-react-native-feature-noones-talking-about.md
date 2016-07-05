@@ -35,20 +35,20 @@ Here's an overview on how this is achieved inside of a Chrome tab. Digging into 
 
 First a connection is established between the native runtime and the remote runtime via Websocket. In the initialization process a `sessionID` is exchanged and the JavaScript runtime is reset to a clean state.
 
-{% highlight javascript linenos=table %}
+```javascript
 // handler for message type `prepareJSRuntime`
 'prepareJSRuntime': function(message) {
   window.onbeforeunload = undefined;
   window.localStorage.setItem('sessionID', message.id);
   window.location.reload();
 }
-{% endhighlight %}
+```
 
 ##### Load Application Logic
 
 The scripts are injected into the runtime so they can be executed later.
 
-{% highlight javascript linenos=table %}
+```javascript
 // handler for message type `executeApplicationScript`
 'executeApplicationScript': function(message, sendReply) {
   for (var key in message.inject) {
@@ -64,13 +64,13 @@ function loadScript(src, callback) {
   script.onload = callback;
   document.head.appendChild(script);
 }
-{% endhighlight %}
+```
 
 ##### Asynchronously Run JavaScript Remotely
 
 After the JavaScript runtime has all of the scripts injected it's ready to start running commands remotely. These commands are sent in batches and the results are reported back to the native runtime over the Websocket.
 
-{% highlight javascript linenos=table %}
+```javascript
 // handler for message type `executeJSCall`
 'executeJSCall': function(message, sendReply) {
   var returnValue = null;
@@ -83,7 +83,7 @@ After the JavaScript runtime has all of the scripts injected it's ready to start
     sendReply(JSON.stringify(returnValue));
   }
 }
-{% endhighlight %}
+```
 
 When experimenting with the codebase a I updated the `debugger.html` page to visualize the batched JavaScript calls and show the UIs memory and CPU utilization - [PR Can Be Found Here](https://github.com/facebook/react-native/pull/2050)
 
