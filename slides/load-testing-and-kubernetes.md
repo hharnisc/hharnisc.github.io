@@ -272,8 +272,24 @@ class: middle, blue-slide
 - **Setup monitoring**
 - Slow rollout (from existing system)
   - 1% -> 10% -> 50% -> 100%
-- Setup autoscaling with test results
+- Build an autoscaling service 😎
 ]
+---
+.left-column[
+## What Now?
+### Autoscaling <br> Service 😎
+]
+.right-column-middle[
+- Monitor all containers in an app
+- Scale up replicas when load exceeds a certain threshold
+- Could even automate the load testing process and *auto set* thresholds
+<br><br>
+<img src="/images/slides/load-testing-and-kubernetes/metrics.png" width="100%"/>
+]
+---
+class: middle
+## Just A Thought...
+<img src="http://imgs.xkcd.com/comics/barrel_part_5.jpg" width="50%" />
 ---
 class: middle
 # Questions?
