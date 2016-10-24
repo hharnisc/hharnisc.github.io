@@ -5,18 +5,12 @@ class: center, middle, inverse-slide
 
 .footnote[Harrison Harnisch ([@hjharnis](https://twitter.com/hjharnis))]
 ---
-## Prerequisites
+## This Talk *Might* Be Enhanced If You're Familiar These
+- `kubectl` command line tool
+- Kubernetes [Deployments](http://kubernetes.io/docs/user-guide/deployments/)
+- Kubernetes [Services](http://kubernetes.io/docs/user-guide/services/)
 
-- You know a little about Kubernetes
-  - `kubectl` command line utility
-  - Kubernetes [deployments](http://kubernetes.io/docs/user-guide/deployments/)
-  - Setting up [services](http://kubernetes.io/docs/user-guide/services/)
-
-If not there’s *no need to panic* here’s a couple resources to get you started:
-
-[What is Kubernetes](http://kubernetes.io/docs/whatisk8s/)  
-[Intro to Kubernetes Workshop](https://github.com/kelseyhightower/intro-to-kubernetes-workshop)  
-[A Technical Overview of Kubernetes (CoreOS Fest 2015)](https://www.youtube.com/watch?v=WwBdNXt6wO4)  
+*But it's certainly not required*
 ---
 class: middle, inverse-slide
 ## You’ve shipped your first deployment to .kubernetes-text[Kubernetes] 🎉🎉🎉
