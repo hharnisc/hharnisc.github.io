@@ -154,6 +154,35 @@ class: middle, inverse-slide
 class: middle, inverse-slide
 ## How much a container needs depends on the type of load <br> .purple-text[Bursty] vs. .blue-text[Constant]
 ---
+.left-column[
+## .purple-text[Bursty] vs. .blue-text[Constant]
+]
+.right-column-middle[
+- If migrating from another service
+    - Take a look at the traffic data (if you've got it)
+      - Periodic Peaks
+      - Random Peaks
+      - Constant
+]
+---
+.left-column[
+## .purple-text[Bursty] vs. .blue-text[Constant]
+]
+.right-column-middle[
+- Constant
+<br><br>
+<img src="/images/slides/load-testing-and-kubernetes/constant.png" width="80%"/>
+]
+---
+.left-column[
+## .purple-text[Bursty] vs. .blue-text[Constant]
+]
+.right-column-middle[
+- Bursty
+<br><br>
+<img src="/images/slides/load-testing-and-kubernetes/bursty.png" width="80%"/>
+]
+---
 class: middle, inverse-slide
 ## Lets set some .purple-text[limits]!
 ---
