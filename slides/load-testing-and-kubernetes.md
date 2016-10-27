@@ -27,6 +27,8 @@ class: middle, inverse-slide
 ]
 .right-column-middle[
 - What’s the failure point of the system?
+    - Quantitative
+      - Requests per second
 ]
 ---
 .left-column[
@@ -34,6 +36,9 @@ class: middle, inverse-slide
 ]
 .right-column-middle[
 - What does a failure look like?
+    - Qualitative
+      - 500s
+      - Segmentation fault
 ]
 ---
 .left-column[
@@ -118,6 +123,20 @@ class: middle, inverse-slide
 <br><br>
 <img src="/images/slides/load-testing-and-kubernetes/over-allocation.png" width="60%"/>
 ]
+---
+class: middle, inverse-slide
+## Overallocation is a .purple-text[tricky] problem to detect
+---
+class: middle, inverse-slide
+## But it becomes a problem when you _scale up your replicas_
+---
+class: center, middle, inverse-slide
+<img src="/images/slides/load-testing-and-kubernetes/over-allocation.png" width="40%"/>
+## vs
+<img src="/images/slides/load-testing-and-kubernetes/just-right.png" width="40%"/>
+---
+class: middle, inverse-slide
+## That's an .green-text[extra container] you could be running
 ---
 .left-column[
 ## Setting Limits
