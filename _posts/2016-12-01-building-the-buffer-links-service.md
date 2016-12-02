@@ -7,7 +7,7 @@ tags:
 - Elasticsearch
 ---
 
-On the surface the [Buffer](https://buffer.com) link counting service is pretty simple. It's job is to keep track of the number of times someone has created a Buffer post with a given url embedded into it.
+On the surface the [Buffer](https://buffer.com) link counting service is pretty simple. Its job is to keep track of the number of times someone has created a Buffer post with a given url embedded into it.
 
 **An Example Link**
 
@@ -24,13 +24,29 @@ Behind the scenes this is what powers the [Buffer Button](https://buffer.com/ext
 
 ![A Buffer Button](/images/posts/link-service/buffer-button.png)
 
-As we've recently shared, Buffer is [moving towards a Service Oriented Architecture](https://overflow.buffer.com/2016/11/16/implementing-service-oriented-architecture-at-buffer/) and moving the links counting logic into it's own service. The links service accounts for a large portion of all Buffer API traffic and at the time of writing contains almost 600 million records.
+As we've recently shared, Buffer is [moving towards a Service Oriented Architecture](https://overflow.buffer.com/2016/11/16/implementing-service-oriented-architecture-at-buffer/) and moving the links counting logic into its own service. The links service accounts for a large portion of all Buffer API traffic and at the time of writing contains almost 600 million records.
 
 ### Starting Out
 
 When I started working on the links service project, the production traffic was being served with a [PHP](http://php.net/) backend and a [Mongo](https://www.mongodb.com/) database. There was also a caching layer stored in memcached.
 
 <img src="/images/posts/link-service/original-links-service.png" width="90%">
+
+### Requirements
+
+Aside from moving the links counting logic into its own service, we wanted to make sure the new service met the following requirements:
+
+**High Availability**
+
+The system should be able to tolerate a partial failure. If one links service replica goes down, the system should still service requests on the other replicas. This means that building a stateless, or even more specifically, conforming to the [12 factor app](https://12factor.net/) principles is key.
+
+**Handle High Throughput**
+
+After collecting data from the original links service we found an average of 400 req/sec with bursts upwards of 700 req/sec. On the write side we observed 8 inserts/sec from the workers. Indicating a heavy skew towards read. We should not only be able to handle the current workload, but handle future workload as it increases (making the assumption that this feature gets utilized more over time).
+
+**Maintain Historical Data**
+
+The links service collection contains time series information that could be utilized in future features. We wanted to preserve the data even though we wouldn't need it directly for the counts.
 
 ### Iteration 1: Amazon RDS (Aurora) + Node + Redis
 
@@ -109,7 +125,7 @@ After backfilling we ran some test queries using the [Node count API](https://ww
 
 <img src="/images/posts/link-service/elasticsearch-rps.png" width="40%">
 
-Things were looking great at 1%, so we stepped up to 10% and then 50%. Oops, we broke it. Requests jumped up to 15 seconds (error timeout) and the containers on Kubernetes started their running out of memory and eventually would get killed. After some investigation, we determined that Elasticsearch was the bottleneck. We started trying to optimize the query by using [filters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html) so we could utilize the Elasticsearch cache.
+Things were looking great at 1%, so we stepped up to 10% and then 50%. Oops, we broke it. Requests jumped up to 15 seconds (error timeout) and the containers on Kubernetes started running out of memory and eventually would get killed. After some investigation, we determined that Elasticsearch was the bottleneck. We started trying to optimize the query by using [filters](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-filtered-query.html) so we could utilize the Elasticsearch cache. At this point the thought occurred that this might not be the best solution for our workload. "We're at 50% of our current workload and we're already doing query optimization", which seemed troubling since we wanted to build something that could carry us into the future. But there was still more unknowns to explore before giving up on Elasticsearch.
 
 The next thing we tried was to [add another replica](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html) to the links index. We were looking to increase the read capacity of the cluster and the Elasticsearch docs call out that one strategy is to increase the number of replicas. However, adding the replicas caused the queries to return more slowly.
 
@@ -121,9 +137,9 @@ Now lets say you set the replicas on the index to 1 and run the same queries as 
 
 <img src="/images/posts/link-service/replica-demo-two.png" width="60%">
 
-Keeping the replicas the same and increasing the number nodes would have been the better solution in our case. However the Elasticsearch cluster was already large enough to be more expensive than our Mongo database.
+Keeping the replicas the same and increasing the number nodes would have been the better solution in our case. However the Elasticsearch cluster was already large enough to be more expensive than our Mongo database. It became clear at this point that changing replicas and nodes would not be enough to carry us confidently into the future.
 
-Again, we decided to iterate.
+So again, we decided to iterate.
 
 ### Iteration 3: Redis + S3
 
