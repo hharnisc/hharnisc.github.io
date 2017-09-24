@@ -20,6 +20,10 @@ layout: default
     {% endif %}
     <div class="post-space"></div>
     {{ content }}
+    <br>
+    <p>
+    Have some thoughts on this? Reach out to me on Twitter: <a href="https://twitter.com/hjharnis">@hjharnis</a>
+    </p>
 </div>
 <div class="related-posts">
     <ul class="posts">
@@ -27,7 +31,7 @@ layout: default
         {% for post in site.related_posts limit:3 %}
             <li>
                 <div class="details">
-                    {{ post.date | date_to_string }} &middot; 
+                    {{ post.date | date_to_string }} &middot;
                     <span class="time">{{ post.content | number_of_words | plus: 250 | divided_by: 180.0}}</span> min read
                 </div>
                 <a href="{{post.url}}">
