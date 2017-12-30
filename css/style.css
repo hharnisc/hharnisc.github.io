@@ -55,6 +55,10 @@ blockquote p{
     color: #C376C3;
 }
 
+.full-width {
+  width: 100%;
+}
+
 /* Header */
 
 .header {
@@ -102,6 +106,11 @@ blockquote p{
     color: #555;
     font-size: 14px;
     line-height: 1.5em;
+}
+
+.post pre {
+  width: 100%;
+  overflow-x: auto;
 }
 
 p img {
