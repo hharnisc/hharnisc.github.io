@@ -400,3 +400,61 @@ table tr th :last-child, table tr td :last-child {
 .highlight {
   margin: 30px 0;
 }
+
+/*Subscriber Signup Form*/
+#mc_embed_signup {
+  background: #eee;
+  padding: 24px;
+}
+
+#mc_embed_signup h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#mc_embed_signup form, #mc_embed_signup h2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#mc_embed_signup .form-items {
+  display: flex;
+}
+
+#mc_embed_signup .email {
+  flex-grow: 1;
+  margin-right: 16px;
+  padding: 8px;
+  border: 1px solid #DDDDDD;
+  outline: none;
+  transition: border 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+#mc_embed_signup .email:focus {
+  box-shadow: 0 0 5px #b861b8;
+  border: 1px solid #b861b8;
+}
+
+#mc_embed_signup .button {
+  background: #555;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  transition: background 0.5s ease;
+}
+
+#mc_embed_signup .button:hover {
+    background: #b861b8;
+}
+
+@media (max-width: 500px) {
+  #mc_embed_signup .form-items {
+    flex-direction: column;
+  }
+
+  #mc_embed_signup .email {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
