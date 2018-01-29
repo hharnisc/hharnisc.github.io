@@ -151,6 +151,10 @@ p img {
     font-family: 'Droid Sans', sans-serif;
 }
 
+.twitter-tweet {
+  margin: 0 auto;
+}
+
 /* posts */
 
 .posts {
