@@ -68,4 +68,6 @@ class: middle, inverse-slide
 
 ---
 
-# TODO: example UI from sidebar
+class: center, middle
+
+<img src="/images/slides/making-the-case-for-frontend-monorepos/sidebar.png" width="100%"/>
