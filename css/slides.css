@@ -1,0 +1,105 @@
+/* Default Slide */
+
+.remark-slide-content {
+  background: #272822;
+  color: #f3f3f3;
+  font-size: 1.5rem;
+}
+
+.remark-slide-content.inverse {
+  background: #f3f3f3;
+  color: #272822;
+}
+
+/* Footer */
+.remark-slide-content .footnote {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+/* 50/50 */
+
+.remark-slide-content.fifty-fifty {
+  display: flex;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.remark-slide-content.fifty-fifty .right-panel {
+  background: #fff;
+  color: #272822;
+}
+
+.remark-slide-content.fifty-fifty .right-panel,
+.remark-slide-content.fifty-fifty .left-panel {
+  padding: 3rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.remark-slide-content.fifty-fifty p {
+  text-align: center;
+}
+
+/* colors */
+
+.elasticsearch {
+  color: #31beb1;
+}
+
+.mongodb {
+  color: #6ba442;
+}
+
+.meteor {
+  color: #de4f4f;
+}
+
+.react {
+  color: #61dafb;
+}
+
+.kubernetes {
+  color: #3371e3;
+}
+
+.blue {
+  color: #457df5;
+}
+
+.red {
+  color: #e84540;
+}
+
+.green {
+  color: #27ae60;
+}
+.purple {
+  color: #cb59e8;
+}
+
+/* code */
+
+.remark-slide-content pre {
+  max-width: 100%;
+}
+
+.remark-code {
+  line-height: 1.5;
+  font-size: 0.7em;
+}
+
+/* table */
+
+.remark-slide-content table {
+  color: #333;
+  width: 100%;
+}

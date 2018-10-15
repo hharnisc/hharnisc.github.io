@@ -15,7 +15,8 @@ layout: base
           if (jsonFile.readyState== 4 && jsonFile.status == 200){
             var slideshow = remark.create({
               source: jsonFile.responseText,
-              highlightStyle: 'googlecode'
+              highlightStyle: 'googlecode',
+              ratio: '16:9',
             });
           }
         }
