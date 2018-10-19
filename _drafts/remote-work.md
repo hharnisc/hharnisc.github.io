@@ -5,12 +5,14 @@ tags:
 - Remote Work
 ---
 
-A few weeks ago [@rrhoover](https://twitter.com/rrhoover/) sent out a poll asking what people find most important when looking for a job. The poll excluded a few things most people value like fair pay, a strong and ethical team, worthy mission etc... The results were hardly surprising.
+A few weeks ago, [@rrhoover](https://twitter.com/rrhoover/) sent out a poll asking what people find most important when looking for a job, and remote work came out on top by a wide margin. The results were hardly surprising to me. Watching the discussion about health, parenting and general freedom it sparked, I found myself thinking that’s true - but that’s not it. That’s not why remote work is changing our world for the better.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Let&#39;s say you&#39;re looking for a new job. What&#39;s most important to you? 🤔</p>&mdash; Ryan Hoover (@rrhoover) <a href="https://twitter.com/rrhoover/status/1040643457901985793?ref_src=twsrc%5Etfw">September 14, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Remote work came out on top by a wide margin, sparking all kinds of discussion about health, parenting and general freedom. While remote work is not without trade-offs (and not for everyone) there are some non-obvious benefits that can make the world a better place - more than just getting rid of your morning commute.
+Now this poll isn’t exactly a scientific study - it excluded a few things most people value like fair pay, a strong and ethical team, worthy mission etc. But then I’m not a scientist, and the point is, people care a lot about being remote workers themselves. That’s cool. But we’re missing out on that bigger picture why as a society, we should be supporting companies that do remote work.
+
+Remote work is not without trade-offs, and it’s not for everyone. That said, there are some non-obvious benefits that can make the world a better place - more than just getting rid of your morning commute.
 
 My first experience with remote work was at Respondly (since acquired by [Buffer](https://buffer.com)) mostly working with other people who were working remote. I was living in the Bay Area with teammates in New Zealand, Germany and other cities in the US. Up to that point I had only worked with local teams in an office and had no expectations. The only real difference I felt was the adjustment to written communication, since I am primarily an audio learner. This was quickly overcome and often better since it is possible to search through all previous conversations.
 
@@ -32,3 +34,5 @@ Giving people the option to stay in their communities is important, and this twe
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This all makes me hopeful that things are going to keep getting better, so long as we can keep working together to make this a thing.
+
+**Special shout out to [@katie_womers](https://twitter.com/katie_womers) for suggestions and edits!**
