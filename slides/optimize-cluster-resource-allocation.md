@@ -1,17 +1,23 @@
-
 class: middle
 
 # Load Testing Kubernetes
-## How To Optimize Your Cluster Resource Allocation in Production
+
+### Optimizing Cluster Resource Allocation in Production
 
 ---
+
 class: fifty-fifty
 .left-panel[
+
 # Harrison Harnisch
+
 ]
 .right-panel[
+
 ## Staff Software <br> Engineer @ Buffer
+
 ### [@hjharnis](https://twitter.com/hjharnis)
+
 ]
 ???
 
@@ -23,12 +29,15 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Case Study: Links Service
+
 ]
 .right-panel[
+
 - Preexisting endpoint in our monolith
 - Serves the number of times a link is shared within Buffer
-]
+  ]
 
 ???
 
@@ -40,9 +49,12 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Case Study: Links Service
+
 ]
 .right-panel[
+
 - Settled on a simple design using Node and DynamoDB
 
 <img src="/images/slides/optimize-cluster-resource-allocation/Node.png" alt="Node" width="35%" />
@@ -59,12 +71,15 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Case Study: Links Service
+
 ]
 .right-panel[
+
 - Deployed the service to Kubernetes (4 replicas)
 - Manually verified that the service was operational
-]
+  ]
 
 ???
 
@@ -99,12 +114,15 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Case Study: Links Service
+
 ]
 .right-panel[
+
 - Scaled up replicas (5x - 20 pods)
 - Helped, but pods still repeatedly dying
-]
+  ]
 
 ???
 
@@ -121,14 +139,17 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Case Study: Links Service
+
 ]
 
 .right-panel[
+
 - I had copied and pasted a `Deployment` from another service
 - The `Deployment` included resource limits
 - `kubectl describe` was reporting `OOMKilled`
-]
+  ]
 
 ???
 
@@ -136,6 +157,8 @@ class: fifty-fifty
 - I could adjust the memory limits, but how much would be enough?
 
 ---
+
+class: middle
 
 # Resource Limits
 
@@ -151,20 +174,23 @@ class: fifty-fifty
 
 class: middle
 
-# How do we optimally set CPU and Memory limits?
+# How do we set CPU and Memory limits?
 
 ---
 
 class: fifty-fifty
 
 .left-panel[
+
 # Optimal Limits
+
 ]
 
 .right-panel[
+
 - Pods have enough resources to complete their task
 - Nodes run maximum number of pods
-]
+  ]
 
 ---
 
@@ -177,7 +203,9 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Under-allocation
+
 ]
 
 .right-panel[
@@ -194,7 +222,9 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Overallocation
+
 ]
 
 .right-panel[
@@ -239,7 +269,9 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Even
+
 ]
 
 .right-panel[
@@ -268,7 +300,9 @@ class: center
 class: fifty-fifty
 
 .left-panel[
+
 # cAdvisor
+
 ]
 
 .right-panel[
@@ -286,7 +320,9 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Kubelet
+
 ]
 
 .right-panel[
@@ -303,7 +339,9 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Heapster
+
 ]
 
 .right-panel[
@@ -332,6 +370,7 @@ replicas: 1
 cpu: 100m # 1/10th of a core
 memory: 50Mi # 50 Mebibytes
 ```
+
 ---
 
 class: middle
@@ -343,7 +382,9 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Ramp Up Test
+
 ]
 
 .right-panel[
@@ -360,7 +401,9 @@ class: fifty-fifty
 class: fifty-fifty
 
 .left-panel[
+
 # Duration Test
+
 ]
 
 .right-panel[
@@ -377,8 +420,8 @@ class: fifty-fifty
 class: middle
 
 # Demo
-## Setting Limits For etcd
 
+### Setting Limits For etcd
 
 ???
 
@@ -413,24 +456,28 @@ class: middle
 class: fifty-fifty
 
 .left-panel[
+
 # Some Observed Failure Modes
+
 ]
 
 .right-panel[
+
 - Memory is slowly increasing
 - CPU is pegged at 100%
 - 500s
 - High response times
 - Large variance in response times
 - Dropped Requests
-]
+  ]
 
 ---
 
 class: middle
 
 # Case Study: Links Service
-## Lessons Learned
+
+### Lessons Learned
 
 ???
 
@@ -443,20 +490,64 @@ class: middle
 class: middle
 
 # It's About Increasing Predictability
-## And Getting More Sleep
+
+### And Getting More Sleep
 
 ---
 
 class: fifty-fifty
 
 .left-panel[
-# Looking Ahead: Kubernetes
+
+# Horizontal Pod Autoscaler (HPA)
+
 ]
 
 .right-panel[
+
+- Change Deployment replica count based on a metric (scale up or down)
+- Custom metrics from Prometheus, Azure Adapter, and StackDriver ([!](https://github.com/GoogleCloudPlatform/k8s-stackdriver))
+- Well supported and feature rich
+  - Cooldown/Delay Settings
+  - Multiple Metrics
+  - External Metrics
+    ]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+
+# Vertical Pod Autoscaler (VPA)
+
+]
+
+.right-panel[
+
+- Change Pod resource requests in place
+- Pod restart is required to change limits
+- **Alpha** Feature
+
+<img src="https://banzaicloud.com/img/blog/cluster-autoscaler/vertical-pod-autoscaler.gif" alt="Vertical Pod Autoscaler Flow" width="70%" />
+
+]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+
+# Looking Ahead: Kubernetes
+
+]
+
+.right-panel[
+
 - Huge step forward for ops and cluster wide operations
 - There's pretty big opportunity to help dev
-]
+  ]
 
 ???
 
@@ -472,6 +563,7 @@ class: fifty-fifty
 class: middle
 
 # KubeScope 🔬
+
 ## https://github.com/hharnisc/kubescope
 
 ---
