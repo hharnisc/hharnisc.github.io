@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remote Work
+title: Remote Work Is An Investment In Community
 tags:
 - Remote Work
 ---
@@ -8,7 +8,6 @@ tags:
 A few weeks ago, [@rrhoover](https://twitter.com/rrhoover/) sent out a poll asking what people find most important when looking for a job, and remote work came out on top by a wide margin. The results were hardly surprising to me. Watching the discussion about health, parenting and general freedom it sparked, I found myself thinking that’s true - but that’s not it. That’s not why remote work is changing our world for the better.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Let&#39;s say you&#39;re looking for a new job. What&#39;s most important to you? 🤔</p>&mdash; Ryan Hoover (@rrhoover) <a href="https://twitter.com/rrhoover/status/1040643457901985793?ref_src=twsrc%5Etfw">September 14, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Now this poll isn’t exactly a scientific study - it excluded a few things most people value like fair pay, a strong and ethical team, worthy mission etc. But then I’m not a scientist, and the point is, people care a lot about being remote workers themselves. That’s cool. But we’re missing out on that bigger picture why as a society, we should be supporting companies that do remote work.
 
@@ -31,8 +30,9 @@ When you spend time in the community you have to interact with other humans (wei
 Giving people the option to stay in their communities is important, and this tweet sums it up perfectly:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey tech companies, you want to have a positive influence on society and politics?<br><br>Let people work remotely from their home towns<br><br>Let people vote in the communities where it matters most<br><br>Let them contribute to those local economies<br><br>Let them support their extended families</p>&mdash; ɥɔɐoɹ (@roach) <a href="https://twitter.com/roach/status/1048716567435866112?ref_src=twsrc%5Etfw">October 6, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This all makes me hopeful that things are going to keep getting better, so long as we can keep working together to make this a thing.
 
 **Special shout out to [@katie_womers](https://twitter.com/katie_womers) for suggestions and edits!**
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
