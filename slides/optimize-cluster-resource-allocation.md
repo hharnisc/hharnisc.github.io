@@ -162,13 +162,96 @@ class: middle
 
 # Resource Limits
 
-- Limits can be set on both CPU and memory utilization
+- Upper limit on container resources
 - Containers run with unbounded CPU and memory limits
 - Kubernetes will restart containers when limits are exceeded
 
 ???
 
 - capable of consuming all resources on a node
+
+---
+
+class: middle
+
+# Resource Requests
+
+- Allocated resources for a container
+- Containers may be throttled back down to request when exceeded
+- Matches limit if no requests set explicitly
+
+---
+
+class: middle
+
+# Quality Of Service (QOS)
+
+<img src="/images/slides/optimize-cluster-resource-allocation/QOS.png" alt="Quality Of Service" width="100%" />
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# QOS: Guaranteed
+]
+
+.right-panel[
+- Highest Priority
+- Limit = Request
+
+<img src="/images/slides/optimize-cluster-resource-allocation/Guaranteed.png" alt="Quality Of Service" width="80%" />
+]
+
+???
+
+- Simple and predictable
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# QOS: Burstable
+]
+
+.right-panel[
+- Requested resource is guaranteed
+- Limit > Request
+
+<img src="/images/slides/optimize-cluster-resource-allocation/Burstable.png" alt="Quality Of Service" width="80%" />
+]
+
+???
+
+- Java Containers
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# QOS: BestEffort
+]
+
+.right-panel[
+- YOLO ¯\\\_(ツ)\_/¯
+]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# QOS: BestEffort
+]
+
+.right-panel[
+- Lowest Priority
+- Can use any amount of free resources
+
+<img src="/images/slides/optimize-cluster-resource-allocation/BestEffort.png" alt="Best Effort" width="50%" />
+]
 
 ---
 
@@ -357,9 +440,12 @@ class: fifty-fifty
 
 ---
 
-# Setting Limits
+class: middle
+
+# Setting Limits and Requests
 
 - Goal: Understand what **one pod** can handle
+- **Use limits** during testing
 - Start with a very conservative set of limits
 - Only change one thing at time and observe changes
 
@@ -367,7 +453,7 @@ class: fifty-fifty
 # limits might look something like
 replicas: 1
 ...
-cpu: 100m # 1/10th of a core
+cpu: 100m # ~1/10th of a core
 memory: 50Mi # 50 Mebibytes
 ```
 
@@ -506,7 +592,7 @@ class: fifty-fifty
 .right-panel[
 
 - Change Deployment replica count based on a metric (scale up or down)
-- Custom metrics from Prometheus, Azure Adapter, and StackDriver ([!](https://github.com/GoogleCloudPlatform/k8s-stackdriver))
+- Custom metrics from [Prometheus](https://github.com/coreos/prometheus-operator), [Azure Adapter](https://github.com/Azure/azure-k8s-metrics-adapter), and ([StackDriver](https://github.com/GoogleCloudPlatform/k8s-stackdriver))
 - Well supported and feature rich
   - Cooldown/Delay Settings
   - Multiple Metrics
@@ -539,32 +625,36 @@ class: fifty-fifty
 
 .left-panel[
 
-# Looking Ahead: Kubernetes
+# Looking Ahead: Kubernetes Developer Tools
 
 ]
 
 .right-panel[
 
-- Huge step forward for ops and cluster wide operations
-- There's pretty big opportunity to help dev
-  ]
+- Tooling for aggregate metrics are fantastic (Prometheus, Datadog, etc.)
+- There's still a need for tools to understand one thing
+
+]
 
 ???
 
 - Current monitoring solutions help us monitor resource trends over time
 - Not easy to get immediate fine grain feedback
   - cAdvisor or exec and run top etc.
-- Both matter!
-  - macro is more for ops
-  - micro is more for developers
 
 ---
 
 class: middle
 
-# KubeScope 🔬
+# KubeScope CLI🔬
 
-## https://github.com/hharnisc/kubescope
+## https://github.com/hharnisc/kubescope-cli
+
+---
+
+class: middle, center
+
+<img src="/images/slides/optimize-cluster-resource-allocation/kubescope-cli.gif" alt="KubeScope CLI" width="70%" />
 
 ---
 
