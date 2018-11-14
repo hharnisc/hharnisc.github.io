@@ -14,7 +14,9 @@ class: fifty-fifty
 ]
 .right-panel[
 
-## Staff Software <br> Engineer @ Buffer
+## Staff Software <br> Engineer @ ZEIT
+
+.zeit-symbol[▲]
 
 ### [@hjharnis](https://twitter.com/hjharnis)
 
@@ -265,7 +267,7 @@ class: fifty-fifty
 
 .left-panel[
 
-# Optimal Limits
+# Optimal* Limits
 
 ]
 
@@ -279,7 +281,7 @@ class: fifty-fifty
 
 class: middle
 
-# Under/Over/Even Resource Allocation
+# Under/Over/Optimal* Resource Allocation
 
 ---
 
@@ -353,7 +355,7 @@ class: fifty-fifty
 
 .left-panel[
 
-# Even
+# Optimal*
 
 ]
 
@@ -592,7 +594,7 @@ class: fifty-fifty
 .right-panel[
 
 - Change Deployment replica count based on a metric (scale up or down)
-- Custom metrics from [Prometheus](https://github.com/coreos/prometheus-operator), [Azure Adapter](https://github.com/Azure/azure-k8s-metrics-adapter), and ([StackDriver](https://github.com/GoogleCloudPlatform/k8s-stackdriver))
+- Custom metrics from [Prometheus](https://github.com/coreos/prometheus-operator), [Azure Adapter](https://github.com/Azure/azure-k8s-metrics-adapter), and [StackDriver](https://github.com/GoogleCloudPlatform/k8s-stackdriver)
 - Well supported and feature rich
   - Cooldown/Delay Settings
   - Multiple Metrics

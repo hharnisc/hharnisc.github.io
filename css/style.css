@@ -369,3 +369,7 @@ table tr td :last-child {
     margin-bottom: 16px;
   }
 }
+
+.zeit-symbol {
+  font-size: 72px;
+}
