@@ -37,7 +37,7 @@ class: fifty-fifty
 ]
 .right-panel[
 
-- Preexisting endpoint in our monolith
+- Preexisting endpoint in the monolith
 - Serves the number of times a link is shared within Buffer
   ]
 
