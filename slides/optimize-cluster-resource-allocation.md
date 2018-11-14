@@ -530,9 +530,15 @@ Show a quick view of Graphana data to show that data was being collected
 
 ---
 
-class: middle
+class: fifty-fifty
 
+.left-panel[
 # Keep A Fail Log
+]
+
+.right-panel[
+<img src="/images/slides/optimize-cluster-resource-allocation/fail.gif" alt="fail" width="170%" />
+]
 
 ???
 
@@ -555,8 +561,8 @@ class: fifty-fifty
 - CPU is pegged at 100%
 - 500s
 - High response times
-- Large variance in response times
 - Dropped Requests
+- Large variance in response times
   ]
 
 ---
