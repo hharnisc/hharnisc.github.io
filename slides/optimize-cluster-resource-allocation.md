@@ -1,8 +1,26 @@
 class: middle
 
-# Load Testing Kubernetes
+# Getting The Most Out Of Kubernetes
 
 ### Optimizing Cluster Resource Allocation in Production
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+
+# Intro
+
+]
+
+.right-panel[
+
+- What are resource Requests and Limits
+- How do you set good Requests and Limits
+- Tools 🛠
+
+]
 
 ---
 
