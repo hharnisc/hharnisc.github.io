@@ -36,7 +36,6 @@ Here's a nice formula from Buffer that shows one way of determining startup equi
 
 Lets say you're a relatively new engineer (2-3 years experience) and joining a company with 10 employees. A fair amount of equity would be around 0.3% - 0.7%
 
-TODO: work in vesting schedule and exercise window
 In the recent years it has become more common for companies offer a 10 year exercise window on stock options. This means that you've 10 years to decide to buy or pass on stock options once they've vested. However it is still pretty standard to have 90 day exercise window. This means that you might have to make a tough choice and pass up on stock options if you don't have the cash on hand within 90 days of leaving. Companies that have shorter exercise windows often end up paying out people who are there during an exit. Here's some more information if you're interesting in learning more: https://blog.colony.io/on-creating-a-better-employee-equity-plan-d89bcab4a4e2/
 
 It is also important to note that the earlier you join the company, the more dilution events you'll experience. An example of a dilution event would be raising another round of funding. This is another reason why joining a company early on should offer more equity. If you joining a company around a Series A raise, you can usually expect to see around 20% - 30% dilution.
