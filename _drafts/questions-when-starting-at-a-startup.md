@@ -39,6 +39,7 @@ Here's a nice formula from Buffer that shows one way of determining startup equi
 Lets say you're a relatively new engineer (2-3 years experience) and joining a company with 10 employees. A fair amount of equity would be around 0.3% - 0.7%
 
 TODO: work in vesting schedule and exercise window
+In the recent years it has become more common for companies offer a 10 year exercise window on stock options. This means that you've 10 years to decide to buy or pass on stock options once they've vested. However it is still pretty standard to have 90 day exercise window. This means that you might have to make a tough choice and pass up on stock options if you don't have the cash on hand within 90 days of leaving. Companies that have shorter exercise windows often end up paying out people who are there during an exit. Here's some more information if you're interesting in learning more: https://blog.colony.io/on-creating-a-better-employee-equity-plan-d89bcab4a4e2/
 
 It is also important to note that the earlier you join the company, the more dilution events you'll experience. An example of a dilution event would be raising another round of funding. This is another reason why joining a company early on should offer more equity. If you joining a company around a Series A raise, you can usually expect to see around 20% - 30% dilution.
 
@@ -55,6 +56,22 @@ Most importantly, the majority of startups fail. The equity could be worth nothi
 8. What is the strike price? (You might not get an answer to this one)
 
 # Funding
+
+When it comes to funding it is more than just understanding the burn rate. Getting to know who is investing in the company and some history can be very telling.
+
+Let's start with the basics. You need to know the total amount of funding, how much cash they have on hand (preferably that day) and the burn rate. This gives you an idea of the scale that the company is operating at as well as understanding how quickly they're spending cash.
+
+After learning about operating costs and spending it is important to ask who has invested into the company. The investors can have a profound impact on the company culture and the direction of the company. Tools like [AngelList](https://angel.co/) and [Crunchbase](https://www.crunchbase.com/) can give you information about previous investments and if they're an individual you can usually find them on LinkedIn.
+
+While a bit forward, ask if the company has failed to make payroll in the last year. If they have struggled to make payroll in the past, this makes choosing the startup a riskier venture and might be a signal that the founders are having trouble raising money.
+
+9. What is the total amount of funding raised?
+10. How much cash is on hand?
+11. What is the [burn rate](https://baremetrics.com/academy/burn-rate)?
+12. What round of funding has the company raised?
+13. Who has invested in the company?
+14. In the last year has the company failed to make payroll?
+
 
 # Board
 
