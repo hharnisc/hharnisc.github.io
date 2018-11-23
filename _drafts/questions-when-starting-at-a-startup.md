@@ -5,8 +5,6 @@ tags:
 - Startups
 ---
 
-GOAL: What questions should I have asked when I joined my first startup?
-
 When I first joined a startup in 2012 I did my best to ask the right questions when interviewing. My engineering background prepared me for engineering tasks and helped my write a great resume, but it didn't prepare me well for how to evaluate a startup offer. While this might be obvious to some, this is what I wish I knew when trying to break into the startup scene.
 
 # Foundation
