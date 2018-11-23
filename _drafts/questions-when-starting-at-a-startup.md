@@ -69,8 +69,14 @@ While a bit forward, ask if the company has failed to make payroll in the last y
 13. Who has invested in the company?
 14. In the last year has the company failed to make payroll?
 
-
 # Board
+
+Just like the investors, the board can have a huge impact on the direction of the company. Determining if the board is healthy for the company is difficult because it is highly subjective. Basically it comes down the deeply unsatisfying _it depends_.
+
+When looking at the board you're looking for an imbalance in power. If an individual or closely connected group on the board can lock or overturn a decision themselves there is a higher chance that the board is unhealthy. A board with concentrated power is almost the same as an individual making all the decisions. Concentrated power is not objectively bad, especially if you know the people with control well and trust that they will do the right thing.
+
+15. Who is on the board of directors?
+16. How many seats do they have?
 
 # Responsibilities
 
