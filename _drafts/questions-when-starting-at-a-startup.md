@@ -80,4 +80,19 @@ When looking at the board you're looking for an imbalance in power. If an indivi
 
 # Responsibilities
 
+Getting an understanding about what you'll be working and who you'll be working with will help you picture what the job will be like. People often describe working at a startup like packing ten years into a single years worth of learning. Unless you're a deep expert in a field (that the startup needs help with) you're going to be learning on the job to get things done. Make sure the projects you'll be working on are interesting and will move you in the direction you want to take your career. Or if you're not sure what direction you want to go, chose a job that will expose you to lots of different things you _might_ be interested in. It is not uncommon for a coworker to find something they love doing and become the person who _owns a set of problems or services_ related to that thing.
+
+A caveat to startups is that things change at an accelerated pace. It might be the case that you start working on a project that gets cancelled (sometimes before your first day!). You can get a feel for who much things might change by asking questions about [product market fit](https://a16z.com/2017/02/18/12-things-about-product-market-fit/). When talking about product market fit it is critical that the company is working with customers to understand they are solving the right problem. Working with the customer can look like doing customer research, support forums (yes engineers do support sometimes at startups) or some other direct line of contact with the customer. If you're satisfied the company has already identified a product that fits the market, the engineering team is going to be solving whatever problems it needs to in order to build the product. If the company has not found a good fit yet, the focus will be on finding the right problem to solve. The process is commonly referred to as a [pivot](https://en.wikipedia.org/wiki/Lean_startup#Pivot) and will likely change your focus.
+
+After you've got an idea about the problem space, you'll want to get to know who you'll be working with. Hopefully the company involves potential teammates in the the interview process so you can meet them and ask questions. If it doesn't you can usually ask to meet with them, especially if they extend you an offer. Consider it a red flag if they won't let you speak to someone on the team. Keep in mind that you'll be spending lots of time working with these people, so you'll want to pretty sure that these are people who you can get along with. That's not to say that everyone will be your new best friend, but they should respect others. This is one of those occasions where you get to choose who you surround yourself with, so make sure these are quality people. If you get a bad feeling about someone, trust your gut here, there are lots of other startups!
+
+17. What projects do you picture I'd work on?
+18. Has the company found product market fit?
+19. How does the company work collect feedback from customers?
+20. Who would I be working with to complete the projects?
+21. With each team member
+  1. What do you work on?
+  2. What's is the company doing well?
+  3. What could the company improve on?
+
 # Company Culture
