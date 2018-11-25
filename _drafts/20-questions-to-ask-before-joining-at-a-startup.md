@@ -5,48 +5,48 @@ tags:
 - Startups
 ---
 
-When I first joined a startup in 2012 I did my best to ask the right questions when interviewing. My engineering background prepared me for engineering tasks and helped my write a great resume, but it didn't prepare me well for how to evaluate a startup offer. While this might be obvious to some, this is what I wish I knew when trying to break into the startup scene.
+When I first joined a startup in 2012 I did my best to ask the right questions when interviewing. My engineering background prepared me for engineering tasks and helped me write a resume, but it didn't prepare me well for how to evaluate a startup offer. While this might be obvious to some, this is what I wish I knew when trying to break into the startup scene.
 
 ## Foundation
 
-Making sure you've got what you need in your day to day is very important. Unless you are independently wealthy, _don't take a job that can't cover your cost of living or does not provide health insurance_. This means you need to spend some time to understand your monthly budget (good to do this even if you aren't interviewing). A good rule of thumb is 25% of your take home pay should go towards your housing, if you're looking to move the the Bay Area up to 40% can be done but you'll have to minimize eating out or have a second income.
+Making sure you've got what you need in your day to day is critical. Unless you are independently wealthy, **don't take a job that can't cover your cost of living or does not provide health insurance**. This means you need to spend some time to create your monthly budget (good to do this even if you aren't interviewing). A good rule of thumb is 25% of your take home pay should go towards housing and up to 40% in the Bay Area. 40% can be done if you minimize costs like going out or have a second income.
 
-If you need to relocate for the job it is very common for companies to offer relocation packages. I've moved across the country twice and it cost around $3000-$6000 for things like:
+If the job requires relocation it is very common for startups to offer relocation packages. I've moved across the country twice and it cost around $3000-$6000 for things like:
 
 - relocation cubes (https://www.upack.com/)
-- shipping your car (https://www.uship.com/vehicles/)
-- if you don't ship your car, hotel while traveling
+- shipping a car (https://www.uship.com/vehicles/)
+- if not shipping a car, hotel while traveling
 - food while traveling
 - hotel for a few nights while finding more permanent housing
 - registration fees (license plate, sticker, etc.)
 
-Both times we moved we packed ourselves, which we could do because we're both healthy 20 somethings. So adjust if you plan on hiring movers.
+Both times we moved we packed ourselves, which we could do because we were both healthy 20 somethings. So adjust if you plan on hiring movers.
 
 ```
 1. What is the base salary?
 2. Could you send me the health, eye and dental insurance plans?
-3. Do you offer relocation (if you need it)
+3. Do you offer relocation? (if you need it)
 ```
 
 ## Equity
 
-So much of how much equity you're offered depends on your experience and the stage of the company. This part of the guide will focus on options, since at the time of writing options are the most common way for startups to offer equity. [Here's an article on how options work](https://a16z.com/2016/08/24/options-ownership/).
+The amount of equity in the offer depends on experience and the stage of the company. This part of the guide will focus on options, since at the time of writing options are the most common way for startups to offer equity. [Here's an article on how options work](https://a16z.com/2016/08/24/options-ownership/).
 
-The first goal is to understand the percentage of shares the company is offering you. It is pretty common to get a written offer with the raw number of shares. While this is helpful you're only getting part of the equation, since the number of shares doesn't mean much if there are millions of shares already issued.
+The first goal is to understand the percentage of shares the company is offering. It is pretty common to get a written offer with the raw number of shares. While helpful, this is only part of the equation, since the number of shares doesn't mean much if there are hundreds of millions of shares already issued.
 
-Here's a nice formula from Buffer that shows one way of determining startup equity amounts: https://open.buffer.com/buffer-open-equity-formula/. This formula is helpful because it takes risk into account by considering the number of people in the company. The smaller the company the larger amount of risk you're taking, thus a greater reward if things work out.
+Here's a nice formula from Buffer that shows one way of determining startup equity amounts: https://open.buffer.com/buffer-open-equity-formula/. This formula is helpful because it takes risk into account by considering the number of people in the company. The smaller the company the larger amount of risk, thus a greater reward if things work out.
 
-Lets say you're a relatively new engineer (2-3 years experience) and joining a company with 10 employees. A fair amount of equity would be around 0.3% - 0.7%
+Lets say you're a relatively new engineer (2-3 years experience) and joining a company with less than 10 employees. A fair amount of equity would be likely be around 0.3% - 0.7%.
 
-In the recent years it has become more common for companies offer a 10 year exercise window on stock options. This means that you've 10 years to decide to buy or pass on stock options once they've vested. However it is still pretty standard to have 90 day exercise window. This means that you might have to make a tough choice and pass up on stock options if you don't have the cash on hand within 90 days of leaving. Companies that have shorter exercise windows often end up paying out people who are there during an exit. Here's some more information if you're interesting in learning more: https://blog.colony.io/on-creating-a-better-employee-equity-plan-d89bcab4a4e2/
+In the recent years it has become more common for companies offer a 10 year exercise window on stock options. This means employees have 10 years to decide to buy or pass on stock options once they've vested, which is a great option. However it is still pretty standard to have 90 day exercise window. The effect is that after leaving the company, employees have to make the decision to buy or pass up on purchasing vested stock options. This could be a difficult choice for someone who doesn't have much cash on hand. Companies that have shorter exercise windows end up benefiting the people who are there during an exit. Here's some more information if you're interested in learning more: https://blog.colony.io/on-creating-a-better-employee-equity-plan-d89bcab4a4e2/
 
-It is also important to note that the earlier you join the company, the more dilution events you'll experience. An example of a dilution event would be raising another round of funding. This is another reason why joining a company early on should offer more equity. If you joining a company around a Series A raise, you can usually expect to see around 20% - 30% dilution.
+It is also important to note that early employees experience more dilution events. An example of a dilution event would be raising another round of funding. This is another reason why joining a company early should offer more equity. If you joining a company around a Series A raise, you can usually expect to see around 20% - 30% dilution.
 
-Lastly there is the strike price, which is the price that you pay when your options vest. The strike price is often determined by the board, so you might not be able to get this before you join. What's important about the strike price is that it is the starting point, so the company needs to grow for you to make money from selling options. So if you can't get the strike price, make sure it is a company that you believe will grow. This usually means that the earlier you join the lower your strike price will be, to compensate for the risk.
+There is the also strike price, which is the purchase price for the options when they vest. The strike price is often determined by the board, so it might not be possible to get this before starting. What's important about the strike price is that it is the starting point, so the company needs to grow for you to make money from selling options. If you can't get the strike price, make sure you believe the company will grow. Early employees often get a better (lower) strike price, to compensate for the risk.
 
-After you've got a better understanding of the percentage of shares the company is offering you and the number of issued shares, you can start to get an idea of the potential value of the options. Here's a helpful startup equity calculator: https://comp.data.frontapp.com/
+After understanding the percentage of shares the company is offering and the number of issued shares, it is possible to get an idea of the potential value of the options. Here's a helpful startup equity calculator: https://comp.data.frontapp.com/
 
-Most importantly, the majority of startups fail. The equity could be worth nothing, which is why it is so important to have a strong foundation.
+Most importantly, the majority of startups fail. The equity could be worth nothing, which is another reason why it is so important to have a strong foundation.
 
 ```
 4. How many total options are offered?
@@ -58,13 +58,13 @@ Most importantly, the majority of startups fail. The equity could be worth nothi
 
 ## Funding
 
-When it comes to funding it is more than just understanding the burn rate. Getting to know who is investing in the company and some history can be very telling.
+There are many factors in startup funding to consider. While getting information about cash on hand and burn rate are important, it is beneficial to understand who is investing along with some history on their past investments.
 
-Let's start with the basics. You need to know the total amount of funding, how much cash they have on hand (preferably that day) and the burn rate. This gives you an idea of the scale that the company is operating at as well as understanding how quickly they're spending cash.
+Let's start with the basics. Ask for total amount of funding, how much cash they have on hand (preferably that day) and the burn rate. With this information you can get a picture of the scale the company is operating as well as how quickly they're spending cash.
 
-After learning about operating costs and spending it is important to ask who has invested into the company. The investors can have a profound impact on the company culture and the direction of the company. Tools like [AngelList](https://angel.co/) and [Crunchbase](https://www.crunchbase.com/) can give you information about previous investments and if they're an individual you can usually find them on LinkedIn.
+After learning about operating costs and spending dig into who has invested into the company. The investors can have a profound impact on the company culture and the direction of the company. Tools like [AngelList](https://angel.co/) and [Crunchbase](https://www.crunchbase.com/) provide information about previous investments. Individual investors can usually be found on LinkedIn.
 
-While a bit forward, ask if the company has failed to make payroll in the last year. If they have struggled to make payroll in the past, this makes choosing the startup a riskier venture and might be a signal that the founders are having trouble raising money.
+While it may seem a bit forward, ask if the company has failed to make payroll in the last year. If they have struggled to make payroll in the past, this makes choosing the startup a riskier venture and might be a signal that the founders are having trouble raising money.
 
 ```
 9. What is the total amount of funding raised?
@@ -79,7 +79,7 @@ While a bit forward, ask if the company has failed to make payroll in the last y
 
 Just like the investors, the board can have a huge impact on the direction of the company. Determining if the board is healthy for the company is difficult because it is highly subjective. Basically it comes down the deeply unsatisfying _it depends_.
 
-When looking at the board you're looking for an imbalance in power. If an individual or closely connected group on the board can lock or overturn a decision themselves there is a higher chance that the board is unhealthy. A board with concentrated power is almost the same as an individual making all the decisions. Concentrated power is not objectively bad, especially if you know the people with control well and trust that they will do the right thing.
+When evaluating the board look for an imbalance in power (or control). If an individual or closely connected group on the board can lock or overturn a decision themselves there is a higher chance that the board is unhealthy. A board with concentrated power is almost the same as an individual making all the decisions. Concentrated power is not objectively bad, especially if you know the people with control well and trust that they will do the right thing.
 
 ```
 15. Who is on the board of directors and how many seats does each member have?
@@ -87,20 +87,20 @@ When looking at the board you're looking for an imbalance in power. If an indivi
 
 ## Responsibilities
 
-Getting an understanding about what you'll be working and who you'll be working with will help you picture what the job will be like. People often describe working at a startup like packing ten years into a single years worth of learning. Unless you're a deep expert in a field (that the startup needs help with) you're going to be learning on the job to get things done. Make sure the projects you'll be working on are interesting and will move you in the direction you want to take your career. Or if you're not sure what direction you want to go, chose a job that will expose you to lots of different things you _might_ be interested in. It is not uncommon for a coworker to find something they love doing and become the person who _owns a set of problems or services_ related to that thing.
+Getting an understanding about what you'll be working and who you'll be working with will help you picture what the job will be like. People often describe working at a startup like packing ten years into a single years worth of learning. Unless you're a deep expert in a field (that the startup needs help with) daily learning will be critical to get things done. Make sure the prospective projects are interesting and will take your career in the desired direction. If you're not sure what direction to take your career, chose a job that will expose you to lots of different ideas you _might_ be interested in. It is not uncommon for someone to find something they love doing and become the person who _owns a set of problems or services_ related to that thing.
 
-A caveat to startups is that things change at an accelerated pace. It might be the case that you start working on a project that gets cancelled (sometimes before your first day!). You can get a feel for who much things might change by asking questions about [product market fit](https://a16z.com/2017/02/18/12-things-about-product-market-fit/). When talking about product market fit it is critical that the company is working with customers to understand they are solving the right problem. Working with the customer can look like doing customer research, support forums (yes engineers do support sometimes at startups) or some other direct line of contact with the customer. If you're satisfied the company has already identified a product that fits the market, the engineering team is going to be solving whatever problems it needs to in order to build the product. If the company has not found a good fit yet, the focus will be on finding the right problem to solve. The process is commonly referred to as a [pivot](https://en.wikipedia.org/wiki/Lean_startup#Pivot) and will likely change your focus.
+Startups change at an accelerated pace and is typical for projects to get cancelled (sometimes before the first day!). To get a feel for how often things change, ask questions about [product market fit](https://a16z.com/2017/02/18/12-things-about-product-market-fit/). It is critical that the company is working closely with customers to understand they are solving the right problem. Working with the customer can look like doing customer research, support forums (yes engineers do support sometimes at startups) or some other direct line of contact with the customer. If the company has already identified a product that fits the market, the engineering team is going to be solving whatever problems it needs to in order to build the product. If the company has not found a good fit yet, the focus will be on finding the right problem to solve. The process is commonly referred to as a [pivot](https://en.wikipedia.org/wiki/Lean_startup#Pivot) and will likely change the engineering team's focus.
 
-After you've got an idea about the problem space, you'll want to get to know who you'll be working with. Hopefully the company involves potential teammates in the the interview process so you can meet them and ask questions. If it doesn't you can usually ask to meet with them, especially if they extend you an offer. Consider it a red flag if they won't let you speak to someone on the team. Keep in mind that you'll be spending lots of time working with these people, so you'll want to pretty sure that these are people who you can get along with. That's not to say that everyone will be your new best friend, but they should respect others. This is one of those occasions where you get to choose who you surround yourself with, so make sure these are quality people. If you get a bad feeling about someone, trust your gut here, there are lots of other startups!
+After you've got an idea about the problem space, you'll want to get to know who you'll be working with. Hopefully the company involves potential teammates in the the interview process so you can meet them and ask questions. If it doesn't you can usually ask to meet with them, especially if they extend you an offer. Consider it a red flag if they won't let you speak to someone on the team you'd be working with. Keep in mind that you'll be spending lots of time working with these people, so you'll want to pretty sure that these are people who you can get along with. That's not to say that everyone will be your new best friend, but they should respect others. This is one of those occasions where you get to choose who you surround yourself with, so make sure these are quality people. If you get a bad feeling about someone, trust your gut here, there are lots of other startups!
 
 ```
 16. What projects do you picture I'd work on?
 17. Has the company found product market fit?
-18. How does the company work collect feedback from customers?
+18. How does the company collect feedback from customers?
 19. Who would I be working with to complete the projects?
-20. Ask each new potential teammate
+20. Ask each new potential teammate:
   1. What do you work on?
-  2. What's is the company doing well?
+  2. What about your role are you enjoying?
   3. What could the company improve on?
 ```
 
@@ -108,10 +108,10 @@ After you've got an idea about the problem space, you'll want to get to know who
 
 _Technically_ there are 23 questions but I grouped the last one together as a question for new potential teammates. Also 23 questions to ask before joining a startup didn't have as good a ring to it.
 
-I'd like to add a couple of notes before you go off and send this list of questions to potential employers. Try to get as many of your questions answered conversationally during the interview and at the end when there is usually some time for questions ask them then. It is also ok to send a list of unanswered questions if you get to the end of the interview process or ran out of time.
+I'd like to add a couple of notes before you go off and send this list of questions to potential employers. Try to get as many of your questions answered conversationally during the interview and save the unanswered questions for the end. It is ok to send a list of unanswered questions if you ran out of time.
 
-It is also unlikely that the interviewers will be able to answer _every question_ for a number of different reasons ranging from _don't know_ to _can't tell you_. It might be helpful to mark the questions that must have answers. For instance you might care a lot about `equity` but not care as much about the `board` structure since you know the founders very well.
+It is unlikely that the interviewers will be able to answer _every question_ for a number of different reasons, ranging from _don't know_ to _can't tell you_. It might be helpful to mark the questions that are important to you. For instance you might care a lot about `equity` but not care as much about the `board` structure since you know the founders very well.
 
-This is not the definitive list of questions for everyone but more of a generic starting point. If you took this list and added questions based off your personal experiences you'd be a better place to pass or accept an offer than if you used only these questions.
+This is not the definitive list of questions for everyone but more of a generic starting point. If you took this list and added questions based off your personal experiences you'd be in a better position to pass or accept an offer than if you used only these questions.
 
-Most importantly, trust your gut. If you get to the interview and something feels off, it probably is. Just because a startup is doing well doesn't mean they have their shit together. There are 1000s of startups to choose from and spending a little extra time to find the right one is worth the effort.
+Finally, and most importantly, trust your gut. If you get to the interview and something feels off, it probably is. Just because a startup is doing well doesn't mean they have their shit together. There are 1000s of startups to choose from and spending a little extra time to find the right one is worth the effort.
