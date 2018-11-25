@@ -1,13 +1,13 @@
 ---
 layout: post
-title: What To Ask Before Joining A Startup
+title: 20 Questions To Ask Before Joining A Startup
 tags:
 - Startups
 ---
 
 When I first joined a startup in 2012 I did my best to ask the right questions when interviewing. My engineering background prepared me for engineering tasks and helped my write a great resume, but it didn't prepare me well for how to evaluate a startup offer. While this might be obvious to some, this is what I wish I knew when trying to break into the startup scene.
 
-# Foundation
+## Foundation
 
 Making sure you've got what you need in your day to day is very important. Unless you are independently wealthy, _don't take a job that can't cover your cost of living or does not provide health insurance_. This means you need to spend some time to understand your monthly budget (good to do this even if you aren't interviewing). A good rule of thumb is 25% of your take home pay should go towards your housing, if you're looking to move the the Bay Area up to 40% can be done but you'll have to minimize eating out or have a second income.
 
@@ -22,11 +22,13 @@ If you need to relocate for the job it is very common for companies to offer rel
 
 Both times we moved we packed ourselves, which we could do because we're both healthy 20 somethings. So adjust if you plan on hiring movers.
 
+```
 1. What is the base salary?
 2. Could you send me the health, eye and dental insurance plans?
 3. Do you offer relocation (if you need it)
+```
 
-# Equity
+## Equity
 
 So much of how much equity you're offered depends on your experience and the stage of the company. This part of the guide will focus on options, since at the time of writing options are the most common way for startups to offer equity. [Here's an article on how options work](https://a16z.com/2016/08/24/options-ownership/).
 
@@ -46,13 +48,15 @@ After you've got a better understanding of the percentage of shares the company 
 
 Most importantly, the majority of startups fail. The equity could be worth nothing, which is why it is so important to have a strong foundation.
 
+```
 4. How many total options are offered?
 5. What is the total number of issued shares?
 6. What is the vesting schedule?
 7. What is the exercise window of vested options?
 8. What is the strike price? (You might not get an answer to this one)
+```
 
-# Funding
+## Funding
 
 When it comes to funding it is more than just understanding the burn rate. Getting to know who is investing in the company and some history can be very telling.
 
@@ -62,23 +66,26 @@ After learning about operating costs and spending it is important to ask who has
 
 While a bit forward, ask if the company has failed to make payroll in the last year. If they have struggled to make payroll in the past, this makes choosing the startup a riskier venture and might be a signal that the founders are having trouble raising money.
 
+```
 9. What is the total amount of funding raised?
 10. How much cash is on hand?
 11. What is the [burn rate](https://baremetrics.com/academy/burn-rate)?
 12. What round of funding has the company raised?
 13. Who has invested in the company?
 14. In the last year has the company failed to make payroll?
+```
 
-# Board
+## Board
 
 Just like the investors, the board can have a huge impact on the direction of the company. Determining if the board is healthy for the company is difficult because it is highly subjective. Basically it comes down the deeply unsatisfying _it depends_.
 
 When looking at the board you're looking for an imbalance in power. If an individual or closely connected group on the board can lock or overturn a decision themselves there is a higher chance that the board is unhealthy. A board with concentrated power is almost the same as an individual making all the decisions. Concentrated power is not objectively bad, especially if you know the people with control well and trust that they will do the right thing.
 
-15. Who is on the board of directors?
-16. How many seats do they have?
+```
+15. Who is on the board of directors and how many seats does each member have?
+```
 
-# Responsibilities
+## Responsibilities
 
 Getting an understanding about what you'll be working and who you'll be working with will help you picture what the job will be like. People often describe working at a startup like packing ten years into a single years worth of learning. Unless you're a deep expert in a field (that the startup needs help with) you're going to be learning on the job to get things done. Make sure the projects you'll be working on are interesting and will move you in the direction you want to take your career. Or if you're not sure what direction you want to go, chose a job that will expose you to lots of different things you _might_ be interested in. It is not uncommon for a coworker to find something they love doing and become the person who _owns a set of problems or services_ related to that thing.
 
@@ -86,13 +93,25 @@ A caveat to startups is that things change at an accelerated pace. It might be t
 
 After you've got an idea about the problem space, you'll want to get to know who you'll be working with. Hopefully the company involves potential teammates in the the interview process so you can meet them and ask questions. If it doesn't you can usually ask to meet with them, especially if they extend you an offer. Consider it a red flag if they won't let you speak to someone on the team. Keep in mind that you'll be spending lots of time working with these people, so you'll want to pretty sure that these are people who you can get along with. That's not to say that everyone will be your new best friend, but they should respect others. This is one of those occasions where you get to choose who you surround yourself with, so make sure these are quality people. If you get a bad feeling about someone, trust your gut here, there are lots of other startups!
 
-17. What projects do you picture I'd work on?
-18. Has the company found product market fit?
-19. How does the company work collect feedback from customers?
-20. Who would I be working with to complete the projects?
-21. With each team member
+```
+16. What projects do you picture I'd work on?
+17. Has the company found product market fit?
+18. How does the company work collect feedback from customers?
+19. Who would I be working with to complete the projects?
+20. Ask each new potential teammate
   1. What do you work on?
   2. What's is the company doing well?
   3. What could the company improve on?
+```
 
-# Company Culture
+---
+
+_Technically_ there are 23 questions but I grouped the last one together as a question for new potential teammates. Also 23 questions to ask before joining a startup didn't have as good a ring to it.
+
+I'd like to add a couple of notes before you go off and send this list of questions to potential employers. Try to get as many of your questions answered conversationally during the interview and at the end when there is usually some time for questions ask them then. It is also ok to send a list of unanswered questions if you get to the end of the interview process or ran out of time.
+
+It is also unlikely that the interviewers will be able to answer _every question_ for a number of different reasons ranging from _don't know_ to _can't tell you_. It might be helpful to mark the questions that must have answers. For instance you might care a lot about `equity` but not care as much about the `board` structure since you know the founders very well.
+
+This is not the definitive list of questions for everyone but more of a generic starting point. If you took this list and added questions based off your personal experiences you'd be a better place to pass or accept an offer than if you used only these questions.
+
+Most importantly, trust your gut. If you get to the interview and something feels off, it probably is. Just because a startup is doing well doesn't mean they have their shit together. There are 1000s of startups to choose from and spending a little extra time to find the right one is worth the effort.

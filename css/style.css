@@ -61,6 +61,12 @@ blockquote p {
   color: #c376c3;
 }
 
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #eee;
+}
+
 .full-width {
   width: 100%;
 }
