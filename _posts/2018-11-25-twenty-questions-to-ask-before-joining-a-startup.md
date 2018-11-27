@@ -13,8 +13,8 @@ Making sure you've got what you need in your day to day is critical. Unless you 
 
 If the job requires relocation it is very common for startups to offer relocation packages. I've moved across the country twice and it cost around $3000-$6000 for things like:
 
-- relocation cubes (https://www.upack.com/)
-- shipping a car (https://www.uship.com/vehicles/)
+- relocation cubes ([https://www.upack.com/](https://www.upack.com/))
+- shipping a car ([https://www.uship.com/vehicles/](https://www.uship.com/vehicles/))
 - if not shipping a car, hotel while traveling
 - food while traveling
 - hotel for a few nights while finding more permanent housing
