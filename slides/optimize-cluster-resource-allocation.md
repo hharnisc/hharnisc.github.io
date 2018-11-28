@@ -462,6 +462,17 @@ class: fifty-fifty
 
 class: middle
 
+# PSA: Heapster Is Deprecated
+
+- Deprecation in v1.11
+- Removal in v1.13
+- Suggest migrating to [Metrics Server](https://github.com/kubernetes-incubator/metrics-server) + [Prometheus](https://prometheus.io/)
+
+https://github.com/kubernetes/heapster/blob/master/docs/deprecation.md#heapster-deprecation-timeline
+---
+
+class: middle
+
 # Setting Limits and Requests
 
 - Goal: Understand what **one pod** can handle
@@ -658,7 +669,7 @@ class: fifty-fifty
 .right-panel[
 
 - Tooling for aggregate metrics are fantastic (Prometheus, Datadog, etc.)
-- There's still a need for tools to understand one thing
+- Need tools to analyze individual Deployments, Pods and containers
 
 ]
 
