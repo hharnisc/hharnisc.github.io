@@ -669,7 +669,7 @@ class: fifty-fifty
 .right-panel[
 
 - Tooling for aggregate metrics are fantastic (Prometheus, Datadog, etc.)
-- Need tools to analyze individual Deployments, Pods and containers
+- Need high resolution tools to analyze individual Deployments, Pods and containers
 
 ]
 
