@@ -1,6 +1,6 @@
 ---
 layout: slides
-title: Load Testing Kubernetes
+title: Getting The Most Out Of Kubernetes
 slides: optimize-cluster-resource-allocation.md
 ---
 
