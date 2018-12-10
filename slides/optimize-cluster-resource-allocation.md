@@ -16,8 +16,8 @@ class: fifty-fifty
 
 .right-panel[
 
-- What are resource Requests and Limits
-- How do you set good Requests and Limits
+- Understaning of Requests and Limits
+- Process to set good Requests and Limits
 - Tools 🛠
 
 ]
@@ -175,6 +175,12 @@ class: fifty-fifty
 
 - OOMKilled occurs when Kubernetes kills a pod due to memory constraints
 - I could adjust the memory limits, but how much would be enough?
+
+---
+
+class: middle
+
+# Limits vs. Requests
 
 ---
 
