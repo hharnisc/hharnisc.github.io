@@ -3,7 +3,9 @@ class: middle
 # Getting The Most Out Of Kubernetes
 
 ### Optimizing Cluster Resource Allocation in Production
-
+<br>
+<br>
+#### Slides pinned to [@hjharnis](https://twitter.com/hjharnis)
 ---
 
 class: fifty-fifty
