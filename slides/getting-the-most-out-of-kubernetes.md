@@ -16,8 +16,8 @@ class: fifty-fifty
 
 .right-panel[
 
-- Understaning of Requests and Limits
-- Process to set good Requests and Limits
+- Understand Requests and Limits
+- Define a process for setting Requests and Limits
 - Tools 🛠
 
 ]
