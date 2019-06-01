@@ -21,6 +21,8 @@ If you don't already have a shared document, create one with the template below.
 
 ### During
 
+
+
 ### After
 
 ## Template
@@ -50,7 +52,27 @@ Here's a template written in Markdown that can be used to drive distributed team
 
 ## Meeting Roles
 
-Shoutout to https://twitter.com/vaurorapub
+Shoutout to [@vaurorapub](https://twitter.com/vaurorapub) for teaching us about meeting roles when I was at Buffer.
+
+There are a few variations of this but there are essentially four roles:
+
+### The Leader
+
+Develops the agenda, guides the group through the meeting and ensures that the team has equal speaking opportunities.
+
+### The Recorder
+
+Ensures everyone has access to the agenda (before, during and after), takes notes during the meeting and records action items during the meeting.
+
+### The Timekeeper
+
+Ensures that the team is spending the appropriate amount of time on each agenda item. When agenda items go long, this person can interject and request an action item for a followup meeting or move on if the conversation is unproductive. The timekeeper can also contribute to the conversation.
+
+### The Participant
+
+Understands the agenda before the meeting and clarifies agenda items that they added during the meeting. Contributes to the conversation around agenda items.
+
+For a more in depth description here [an article that goes in detail on each meeting role](https://www.conferencecalling.com/blog/meeting-roles).
 
 ## Gotchas
 
