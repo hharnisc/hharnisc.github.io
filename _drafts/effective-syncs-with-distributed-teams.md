@@ -17,11 +17,11 @@ The driver for the meeting should be a real time collaborative document like [Go
 
 ### Before
 
-If you don't already have a shared document, create one with the template below. If you do have a shared document create a new entry at the top of the document with the same template. Update the `YYYY-MM-DD` with the date the sync will take place. Share this with all the participants of the meeting as early as possible and ask team members to add agenda items. The longer agenda items are on the list will mean that agenda items get more exposure. Participants will have time to think about each item. About an hour before the meeting prompt participants (a calendar or slack reminder is great for this) to add missing agenda items to the list.
+If you don't already have a shared document, create one with the template below. If you do have a shared document create a new entry at the top of the document with the same template. Update the `YYYY-MM-DD` with the date the sync will take place. Share this with all the participants of the meeting as early as possible and ask team members to add agenda items. It's also best practice to create a recurring weekly meeting with a link to the agenda. The longer agenda items are on the list will mean that agenda items get more exposure. Participants will have time to think about each item. About an hour before the meeting prompt participants (a calendar or slack reminder is great for this) to add missing agenda items to the list. Five minutes before the meeting starts send out the link for the video call in a shared channel.
 
 ### During
 
-
+The meeting leader should start the meeting on time, this is a signal that peoples time is respected -- also late participants can catch up with the meeting notes. TODO: start back here
 
 ### After
 
@@ -34,9 +34,13 @@ Here's a template written in Markdown that can be used to drive distributed team
 
 ## Agenda
 
+Meeting leader: @harrison
+
+- [ ] choose meeting roles (other than leader)
 - [ ] go over last weeks action items
 - [ ] **add action items here**
 - [ ] make sure this weeks action items have an assignee and are prioritized
+- [ ] choose meeting leader for next week
 
 ## Notes
 
