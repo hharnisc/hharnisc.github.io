@@ -10,15 +10,42 @@ Over the past few years I've participated or lead syncs in both fully distribute
 
 ## Why Do This?
 
-## Define A Process
 
-The driver for the meeting should be a real time collaborative document like [Google Docs](https://docs.google.com/), [Notion](http://notion.so) or [Dropbox Paper](https://www.dropbox.com/paper). This is important because it allows the entire team to follow along and participate before, during and after the meeting. Everyone should join the call individually and preferably on a headset to keep the noise down.
+## Define The Process
+
+The driver for the meeting should be a real time collaborative document like [Google Docs](https://docs.google.com/), [Notion](http://notion.so) or [Dropbox Paper](https://www.dropbox.com/paper). This is important because it allows the entire team to follow along and participate before, during and after the meeting. Participants should join the call individually and preferably on a headset to keep the noise down.
 
 ### Before
+
+If you don't already have a shared document, create one with the template below. If you do have a shared document create a new entry at the top of the document with the same template. Update the `YYYY-MM-DD` with the date the sync will take place. Share this with all the participants of the meeting as early as possible and ask team members to add agenda items. The longer agenda items are on the list will mean that agenda items get more exposure. Participants will have time to think about each item. About an hour before the meeting prompt participants (a calendar or slack reminder is great for this) to add missing agenda items to the list.
 
 ### During
 
 ### After
+
+## Template
+
+Here's a template written in Markdown that can be used to drive distributed team syncs:
+
+```md
+# YYYY-MM-DD
+
+## Agenda
+
+- [ ] go over last weeks action items
+- [ ] **add action items here**
+- [ ] make sure this weeks action items have an assignee and are prioritized
+
+## Notes
+
+- What did the team talk about?
+  - some more context
+
+## Action Items
+
+- [ ] Action items from the meeting @harrison
+
+```
 
 
 ## Meeting Roles
@@ -30,6 +57,7 @@ Shoutout to https://twitter.com/vaurorapub
 - Timezones
 - One person overpowering the meeting
 - Partially distributed teams
+- Number of people in a call
 
 ## Teach Others and Practice
 
