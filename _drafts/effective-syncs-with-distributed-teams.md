@@ -10,6 +10,7 @@ Over the past few years I've participated or lead syncs in both fully distribute
 
 ## Why Do This?
 
+Effective syncs lay the foundation for strong communication channels and opportunities to build trust between team members. When everyone understands the shared goals and knows what they need to do, the team can move in the same direction. Getting everyone aligned is arguably one of the most important goals of any team or organization since it reduces wasted effort and over time increases velocity. A great deep dive on this subject is [Good to Great: Why Some Companies Make the Leap...And Others Don't](https://www.amazon.com/dp/B0058DRUV6/) by Jim Collins which provides several case studies on companies have exhibited these behaviors sustainably.
 
 ## Define The Process
 
@@ -83,7 +84,7 @@ For a more in depth description here [an article that goes in detail on each mee
 
 ## Gotchas
 
-One thing to note is that this process should be viewed as a starting point. Every team is going to be different and what works for one might not work for another. Here are some gotchas that I've experienced with some ideas on how to address them.
+Here are some gotchas that I've experienced with some ideas on how to address each one. You might find some of your own along the way depending on your team and company.
 
 ### Large teams
 
@@ -100,3 +101,7 @@ When a team is split in very difficult timezone splits (8 hours apart or more) i
 ## Teach Others and Practice
 
 TODO: close, make it clear this can and should be tweaked for the team
+
+--
+
+While this process has been tested in a few different companies and team setups it should be viewed as a starting point for your own team syncs. Every team is going to be different and what works for one might not work for another. It's important to listen to the team and use their feedback to improve the process. If you do make changes, it is best to change one thing at a time and observe. Using the scientific method you can keep doing things that are working and revert things that are not until you're happy with the process.
