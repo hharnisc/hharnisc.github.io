@@ -86,11 +86,11 @@ For a more in depth description here [an article that goes in detail on each mee
 
 Here are some gotchas that I've experienced with some ideas on how to address each one. You might find some of your own along the way depending on your team and company.
 
-### Large teams
+### Large Teams
 
 With team syncs larger than 8, the number of agenda items and amount of discussion around each item tend to grow. This makes it difficult to have meetings under an hour. Through personal experience, 1 hour is the maximum amount of time you can keep the attention of a small group. If possible, the best thing to do is to split the group into smaller teams. It's likely that there is already a natural point of division in work.
 
-### Partially distributed teams
+### Partially Distributed Teams
 
 In a partially distributed team, some members work in a central location while others are working "remote". The "remote" team members end up getting treated second class (likely not on purpose) and it is more difficult to contribute to the sync. Some of the difficulties can be fixed by enabling team members from the central location to work from home so they can get the "remote" experience. People will quickly point out things like _the audio quality is not good enough with a single laptop in the center of the room_ and _every time I try to talk I get cut off_. Some things can be solved with better tech while others are solved with empathy from being "remote".
 
