@@ -98,10 +98,6 @@ In a partially distributed team some members work in a central location, while o
 
 When a team is split in very difficult timezone splits (8 hours apart or more) it can be difficult to find a time that works for everyone. There are tools that can help you find the best time for example: https://www.timeanddate.com/worldclock/meeting.html When the best time ends up being a bad compromise for everyone it can be helpful to ask teammates if they are ok with an early or a late meeting. Someone being a morning person or a night owl can make all the difference!
 
-## Teach Others and Practice
-
-TODO: close, make it clear this can and should be tweaked for the team
-
 --
 
 While this process has been tested in a few different companies and team setups it should be viewed as a starting point for your own team syncs. Every team is going to be different and what works for one might not work for another. It's important to listen to the team and use their feedback to improve the process. If you do make changes, it is best to change one thing at a time and observe. Using the scientific method you can keep doing things that are working and revert things that are not until you're happy with the process.
