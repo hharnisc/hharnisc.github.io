@@ -91,6 +91,8 @@ With team syncs larger than 8, the number of agenda items and amount of discussi
 
 ### Partially distributed teams
 
+In a partially distributed team some members work in a central location, while others are working "remote". The "remote" team members end up getting treated second class (likely not on purpose) and its more difficult to contribute to the sync. Some of the difficulties can be fixed by enabling team members from the central location to work from home so they can get the "remote" experience. People will quickly point out things like _the audio is not good enough with a single laptop in the center of the room_ and _every time I try to talk I get cut off_. Some things can be solved with better tech while others are solved with empathy from being "remote".
+
 ### One person overpowering the meeting
 
 ### Timezones
