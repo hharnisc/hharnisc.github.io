@@ -93,9 +93,9 @@ With team syncs larger than 8, the number of agenda items and amount of discussi
 
 In a partially distributed team some members work in a central location, while others are working "remote". The "remote" team members end up getting treated second class (likely not on purpose) and its more difficult to contribute to the sync. Some of the difficulties can be fixed by enabling team members from the central location to work from home so they can get the "remote" experience. People will quickly point out things like _the audio is not good enough with a single laptop in the center of the room_ and _every time I try to talk I get cut off_. Some things can be solved with better tech while others are solved with empathy from being "remote".
 
-### One person overpowering the meeting
-
 ### Timezones
+
+When a team is split in very difficult timezone splits (8 hours apart or more) it can be difficult to find a time that works for everyone. There are tools that can help you find the best time for example: https://www.timeanddate.com/worldclock/meeting.html When the best time ends up being a bad compromise for everyone it can be helpful to ask teammates if they are ok with an early or a late meeting. Someone being a morning person or a night owl can make all the difference!
 
 ## Teach Others and Practice
 
