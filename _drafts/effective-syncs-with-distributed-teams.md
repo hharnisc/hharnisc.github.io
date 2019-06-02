@@ -27,6 +27,8 @@ There are few recurring agenda items that serve as a reminder that ensure that t
 
 ### After
 
+If there are action items that are related to longer term goals, the leader should link the action item to the longer term goals. (This depends on how longer term goals are communicated and prioritized) The leader should also create the next weeks agenda with the date of the next sync and share it with the team. As each team member completes their respective action items, they mark item complete with the checkbox. This allows everyone to track progress and quickly communicate status. During the week as team members think of things to talk about they can add items to the shared agenda for the next week.
+
 ## Template
 
 Here's a template written in Markdown that can be used to drive distributed team syncs:
