@@ -17,7 +17,7 @@ The driver for the meeting should be a real time collaborative document like [Go
 
 ### Before
 
-If you don't already have a shared document, create one with the template below. If you do have a shared document create a new entry at the top of the document with the same template. Update the `YYYY-MM-DD` with the date the sync will take place. Share this with all the participants of the meeting as early as possible and ask team members to add agenda items. It's also best practice to create a recurring weekly meeting with a link to the agenda. The longer agenda items are on the list will mean that agenda items get more exposure. Participants will have time to think about each item. About an hour before the meeting prompt participants (a calendar or slack reminder is great for this) to add missing agenda items to the list. Five minutes before the meeting starts send out the link for the video call in a shared channel.
+If you don't already have a shared document, create one with the template below. If you do have a shared document create a new entry at the top of the document with the same template. Update the `YYYY-MM-DD` with the date the sync will take place. Share this with all the participants of the meeting as early as possible and ask team members to add agenda items. It's also best practice to create a recurring weekly meeting with a link to the agenda. Syncs should last between 30 minutes (for teams around 4) and no longer than an hour (for teams around 8). The longer agenda items are on the list will mean that agenda items get more exposure. Participants will have time to think about each item. About an hour before the meeting prompt participants (a calendar or slack reminder is great for this) to add missing agenda items to the list. Five minutes before the meeting starts send out the link for the video call in a shared channel.
 
 ### During
 
@@ -83,10 +83,17 @@ For a more in depth description here [an article that goes in detail on each mee
 
 ## Gotchas
 
-- Timezones
-- One person overpowering the meeting
-- Partially distributed teams
-- Number of people in a call
+One thing to note is that this process should be viewed as a starting point. Every team is going to be different and what works for one might not work for another. Here are some gotchas that I've experienced with some ideas on how to address them.
+
+### Large teams
+
+With team syncs larger than 8, the number of agenda items and amount of discussion around each item tend to grow. This makes it difficult to have meetings under an hour. Through personal experience, 1 hour is the maximum amount of time you can keep the attention of the group. If possible, the best thing to do is to split the group into two teams. It's likely that there is already a natural point of division in work.
+
+### Partially distributed teams
+
+### One person overpowering the meeting
+
+### Timezones
 
 ## Teach Others and Practice
 
