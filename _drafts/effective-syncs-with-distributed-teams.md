@@ -21,7 +21,9 @@ If you don't already have a shared document, create one with the template below.
 
 ### During
 
-The meeting leader should start the meeting on time, this is a signal that peoples time is respected -- also late participants can catch up with the meeting notes. TODO: start back here
+The meeting leader should start the meeting on time, this is a signal that peoples time is respected -- also late participants can catch up with the meeting notes. Starting at the top of the agenda, clearly state the contents of the agenda item and ask the person who wrote it if they would like to provide more context. Some agenda items can be announcements while others may require more discussion or possibly be an action item. The leader should help guide the conversation if it gets off topic or unproductive. The timekeeper should be providing signals for spending too much time on a given topic. The recorder should be writing down what was talked about and adding action items.
+
+There are few recurring agenda items that serve as a reminder that ensure that the current and future meetings go smoothly. Before talking about this weeks agenda items the team should choose meeting roles (other than the leader) and go through the status of last weeks action items. If any of the action items from last week remain they should be moved to the next weeks action items or chosen not to be done by the team. After this weeks agenda has been talked through the team should go through next weeks action items and make sure each one has someone assigned to it and the list of action items is prioritized. This helps each team member understand their next tasks. The very last item should be to choose a leader for the next week.
 
 ### After
 
