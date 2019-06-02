@@ -57,7 +57,6 @@ Meeting leader: @harrison
 
 ```
 
-
 ## Meeting Roles
 
 Shoutout to [@vaurorapub](https://twitter.com/vaurorapub) for teaching us about meeting roles when I was at Buffer.
