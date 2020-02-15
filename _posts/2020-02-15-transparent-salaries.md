@@ -2,7 +2,6 @@
 layout: post
 title: Transparent Salaries
 tags:
-- Remote Work
 - Transparancy
 ---
 
