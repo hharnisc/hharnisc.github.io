@@ -71,6 +71,30 @@ class: fifty-fifty
 .right-panel[
 - ~350k MAU
 - ~4.5M Monthly Page Views
-- ??? other scale metric, like bandwidth?
-- ??? other scale metric, like time spent per session or total time in console?
+- xxx other metrics different countries
+- xxx other scale metric, like bandwidth?
+- xxx other scale metric, like time spent per session or total time in console?
 ]
+
+???
+
+- The take away is that this isn't a huge amount of traffic, but it is very high value traffic from all around the world
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# Complexity
+]
+
+.right-panel[
+- xxx products
+- xxx teams
+- xxx engineers
+- xxx LOC
+]
+
+???
+
+- The take away that there are organizational challanges here due to the size and structure of the company
