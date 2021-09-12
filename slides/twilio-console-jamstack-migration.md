@@ -98,3 +98,45 @@ class: fifty-fifty
 ???
 
 - The take away that there are organizational challanges here due to the size and structure of the company
+
+---
+
+class: middle
+
+# Legacy Console
+
+---
+
+# Legacy Console: Architecture
+
+- SSR index.html with navigation shell and inject content in a few different ways
+- Inject JS/CSS into head for client side rendered apps (React, JQuery, etc.)
+- Inject downstream rendered HTML inot the content directly for SSR apps (PHP, etc.)
+
+---
+
+class: inverse, middle
+
+# Essentially, legacy Console was a microfrontend architecture stitched together on the backend.
+
+???
+
+- This in of itself is not a bad thing, however the trade offs playing out over time were not ideal for our situation
+
+TODO: would it make sense to put a diagram here instead?
+
+---
+
+# Legacy Console: Issues
+
+- First request always had to go to a US based region to SSR index.html
+- When crossing product boundaries a full page refresh is required
+- Teams have near complete autonomy, all the way down to how to build their application
+
+???
+
+- Always having to go to a US region is slow, especially outside the us
+- It's a pretty common flow to buy a number and then use another product like messaging, our customers quite often would have multiple tabs open to mitigate this
+- 30+ teams means 30+ different ways of doing things
+- Org structure did not encourage sharing methods and practices accross teams
+- Less time to focus on solving problems for the customer
