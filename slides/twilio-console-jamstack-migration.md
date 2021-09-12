@@ -131,12 +131,43 @@ TODO: would it make sense to put a diagram here instead?
 
 - First request always had to go to a US based region to SSR index.html
 - When crossing product boundaries a full page refresh is required
+- Errors bubble up unpredictably
 - Teams have near complete autonomy, all the way down to how to build their application
 
 ???
 
 - Always having to go to a US region is slow, especially outside the us
 - It's a pretty common flow to buy a number and then use another product like messaging, our customers quite often would have multiple tabs open to mitigate this
+- Some applications have errors that are spread out in multiple projects, while others are handled by catch all logic
 - 30+ teams means 30+ different ways of doing things
 - Org structure did not encourage sharing methods and practices accross teams
 - Less time to focus on solving problems for the customer
+
+---
+
+class: middle
+
+# New Console
+
+???
+
+- Improve the customer experiences of the console, globally
+- Enable teams to focus on what matters most, solving problems for their customers
+
+---
+
+# New Console: Architecture
+
+- Jamstack hosted on Netlify
+- Shared CI/CD pipeline
+- Legacy code is iframed into new Console
+- Everything is an "Application Package"
+  - (code split bundles wrapped in Error Boundaries)
+
+???
+
+- Initial request and all static assets come from the nearest CDN node
+- One CI/CD means that you don't need to roll your own or maintain your own system
+- The iframe approach allows for incremental migration at the page level
+- Code splitting applications keeps the intial payload small
+- Error boundaries on the application allows error routing to go to the correct team
