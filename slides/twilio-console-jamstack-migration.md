@@ -131,7 +131,7 @@ TODO: would it make sense to put a diagram here instead?
 
 - First request always had to go to a US based region to SSR index.html
 - When crossing product boundaries a full page refresh is required
-- Errors bubble up unpredictably
+- Share development environments `dev` -> `stage` -> `prod`
 - Teams have near complete autonomy, all the way down to how to build their application
 
 ???
@@ -171,3 +171,56 @@ class: middle
 - The iframe approach allows for incremental migration at the page level
 - Code splitting applications keeps the intial payload small
 - Error boundaries on the application allows error routing to go to the correct team
+
+---
+
+class: middle
+
+# New Console: Impact
+
+---
+
+# Performance Improvements
+
+- TTFB (global)
+- Initial Page Load (global)
+
+---
+
+# Increased Development Velocity
+
+- Teams have gone from shipping 1x week to multiple times per day
+- Preview deployments
+- More focus on solving customer problems
+
+---
+
+# Increased Collaboration
+
+- Preview deploys allow for quicker validation on code reviews
+- Direct feedback from product and design
+
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-featurepeek.png" alt="Twilio Preview Deployment FeaturePeek" width="30%" />
+
+???
+
+- To get a review from a teammate you used to have to check out the PR branch and spin up the stack locally
+- Teams were either not getting feedback from product and design or would batch it up and do all the reviews right before launch
+
+---
+
+class: middle
+
+# Closing
+
+---
+
+class: middle, inverse
+
+# The Jamstack architecture has caused a shift in how Twilio thinks about frontend applications.
+
+???
+
+- Other teams working outside the Console are starting to plan their migration to a Jamstack architecture
+- The Console is moving towards a truely global presence to meet our customers where they are
+- It a deeper focus on solving problems for our customers
