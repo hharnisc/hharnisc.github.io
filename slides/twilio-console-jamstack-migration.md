@@ -48,7 +48,7 @@ class: middle
 
 ???
 
-- lots of products the make up different parts of the Twilio platform
+- lots of products the make up different parts of the .twilio[Twilio] platform
 
 ---
 
@@ -106,12 +106,17 @@ class: middle
 # Legacy Console
 
 ---
+class: fifty-fifty
 
+.left-panel[
 # Legacy Console: Architecture
+]
 
-- SSR index.html with navigation shell and inject content in a few different ways
-- Inject JS/CSS into head for client side rendered apps (React, JQuery, etc.)
-- Inject downstream rendered HTML inot the content directly for SSR apps (PHP, etc.)
+.right-panel[
+- SSR index.html and inject content
+  - SSR content and inject on the server
+  - SSR scripts and inject on the client
+]
 
 ---
 
@@ -127,12 +132,18 @@ TODO: would it make sense to put a diagram here instead?
 
 ---
 
-# Legacy Console: Issues
+class: fifty-fifty
 
-- First request always had to go to a US based region to SSR index.html
-- When crossing product boundaries a full page refresh is required
+.left-panel[
+# Legacy Console: Issues
+]
+
+.right-panel[
+- First render always goes through US
+- Crossing products ALWAYS needs full page refresh
 - Share development environments `dev` -> `stage` -> `prod`
-- Teams have near complete autonomy, all the way down to how to build their application
+- Teams have complete autonomy (almost)
+]
 
 ???
 
@@ -156,13 +167,18 @@ class: middle
 
 ---
 
-# New Console: Architecture
+class: fifty-fifty
 
+.left-panel[
+# Architecture
+]
+
+.right-panel[
 - Jamstack hosted on Netlify
 - Shared CI/CD pipeline
 - Legacy code is iframed into new Console
 - Everything is an "Application Package"
-  - (code split bundles wrapped in Error Boundaries)
+]
 
 ???
 
@@ -170,6 +186,7 @@ class: middle
 - One CI/CD means that you don't need to roll your own or maintain your own system
 - The iframe approach allows for incremental migration at the page level
 - Code splitting applications keeps the intial payload small
+- Application package = code split bundles wrapped in Error Boundaries
 - Error boundaries on the application allows error routing to go to the correct team
 
 ---
@@ -180,27 +197,45 @@ class: middle
 
 ---
 
-# Performance Improvements
+class: fifty-fifty
 
+.left-panel[
+# Performance Improvements
+]
+
+.right-panel[
 - TTFB (global)
 - Initial Page Load (global)
+]
 
 ---
 
+class: fifty-fifty
+
+.left-panel[
 # Increased Development Velocity
+]
 
-- Teams have gone from shipping 1x week to multiple times per day
-- Preview deployments
+.right-panel[
+- Small changes multiple times per day > weekly bulk changes
+- Preview deployments = ∞ staging environments
 - More focus on solving customer problems
+]
 
 ---
 
-# Increased Collaboration
+class: fifty-fifty
 
+.left-panel[
+# Increased Collaboration
+]
+
+.right-panel[
 - Preview deploys allow for quicker validation on code reviews
 - Direct feedback from product and design
 
-<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-featurepeek.png" alt="Twilio Preview Deployment FeaturePeek" width="30%" />
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-featurepeek.png" alt="Twilio Preview Deployment FeaturePeek" width="50%" />
+]
 
 ???
 
@@ -217,7 +252,7 @@ class: middle
 
 class: middle, inverse
 
-# The Jamstack architecture has caused a shift in how Twilio thinks about frontend applications.
+# The Jamstack architecture has caused a shift in how .twilio[Twilio] thinks about frontend applications.
 
 ???
 
