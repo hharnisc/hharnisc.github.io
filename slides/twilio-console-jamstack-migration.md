@@ -1,7 +1,15 @@
 
 class: center, middle
 
-# .twilio[Twilio] Console
+<h1 style="display: flex; align-items: center; justify-content: center; gap: 15px">
+  <img
+    src="/images/slides/twilio-console-jamstack-migration/twilio-logo.png"
+    alt="Twilio Logo"
+    width="9%"
+    style="margin:-20px"
+  />
+  .twilio[Twilio] Console
+</h1>
 ### A Large Scale Migration to Jamstack
 
 .footnote[Harrison Harnisch ([@hjharnis](https://twitter.com/hjharnis))]
