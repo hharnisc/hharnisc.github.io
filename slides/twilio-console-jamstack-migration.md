@@ -95,10 +95,9 @@ class: fifty-fifty
 ]
 
 .right-panel[
-- xxx products
-- xxx teams
-- xxx engineers
-- xxx LOC
+- 30+ products
+- 30+ teams
+- 300+ engineers
 ]
 
 ???
