@@ -77,11 +77,9 @@ class: fifty-fifty
 ]
 
 .right-panel[
-- ~350k MAU
 - ~4.5M Monthly Page Views
-- xxx other metrics different countries
-- xxx other scale metric, like bandwidth?
-- xxx other scale metric, like time spent per session or total time in console?
+- ~480 GB Monthly Bandwidth
+- Customers in over 200 countries
 ]
 
 ???
