@@ -10,7 +10,7 @@ class: center, middle
   />
   .twilio[Twilio] Console
 </h1>
-### A Large Scale Migration to Jamstack
+## A Large Scale Migration to Jamstack
 
 .footnote[Harrison Harnisch ([@hjharnis](https://twitter.com/hjharnis))]
 
@@ -211,6 +211,7 @@ class: fifty-fifty
 .right-panel[
 - TTFB (global)
 - Initial Page Load (global)
+- Eliminated full page refresh
 ]
 
 ---
