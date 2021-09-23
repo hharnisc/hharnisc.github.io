@@ -34,6 +34,30 @@ class: fifty-fifty
 
 ---
 
+class: fifty-fifty
+
+.left-panel[
+
+# Harrison Harnisch
+
+]
+.right-panel[
+
+## Principal Software <br> Engineer @ .twilio[Twilio]
+
+<img
+  src="/images/slides/twilio-console-jamstack-migration/twilio-logo.png"
+  alt="Twilio Logo"
+  width="20%"
+  style="margin-top: -20px; margin-bottom: -20px;"
+/>
+
+### [@hjharnis](https://twitter.com/hjharnis)
+
+]
+
+---
+
 class: middle
 
 # What is the .twilio[Twilio] Console?
@@ -60,6 +84,7 @@ class: fifty-fifty
 
 .left-panel[
 # Console 1.0
+## c. 2008
 ]
 
 .right-panel[
@@ -86,6 +111,7 @@ class: fifty-fifty
 
 .left-panel[
 # Console 2.0
+### c. 2016
 ]
 
 .right-panel[
