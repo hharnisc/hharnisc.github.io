@@ -52,21 +52,53 @@ class: inverse, middle
 
 class: middle
 
-<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-screenshot.png" alt="Twilio Console Screenshot" width="90%" />
+# Console: A Brief History
 
-???
+---
 
-- lots of products the make up different parts of the .twilio[Twilio] platform
+class: fifty-fifty
+
+.left-panel[
+# Console 1.0
+]
+
+.right-panel[
+- Initially 3 products
+- One team building everything
+- Relatively simple navigation
+]
 
 ---
 
 class: middle
 
-<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-app-screenshot.png" alt="Twilio Numbers App" width="90%" />
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-original.png" alt="Twilio Console Screenshot" width="90%" />
 
-???
+---
 
-- each product is its own app, most of which are maintained by 1 or more teams
+class: inverse, middle
+
+# The single team approach hit limits quickly
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# Console 2.0
+]
+
+.right-panel[
+- Dozens of products
+- Dozens of teams working independently
+- Complex navigation, pinning products
+]
+
+---
+
+class: middle
+
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-2-pinning.gif" alt="Twilio Console Screenshot" width="90%" />
 
 ---
 
@@ -106,15 +138,10 @@ class: fifty-fifty
 
 ---
 
-class: middle
-
-# Legacy Console
-
----
 class: fifty-fifty
 
 .left-panel[
-# Legacy Console: Architecture
+# Console 2.0: Architecture
 ]
 
 .right-panel[
@@ -127,20 +154,18 @@ class: fifty-fifty
 
 class: inverse, middle
 
-# Essentially, legacy Console was a microfrontend architecture stitched together on the backend.
+# Console 2.0: a microfrontend architecture stitched together on the backend
 
 ???
 
 - This in of itself is not a bad thing, however the trade offs playing out over time were not ideal for our situation
-
-TODO: would it make sense to put a diagram here instead?
 
 ---
 
 class: fifty-fifty
 
 .left-panel[
-# Legacy Console: Issues
+# Console 2.0: Issues
 ]
 
 .right-panel[
@@ -161,9 +186,14 @@ class: fifty-fifty
 
 ---
 
+class: inverse, middle
+
+# Dozens of independent teams eventually hit limits
+---
+
 class: middle
 
-# New Console
+# Console 3.0
 
 ???
 
@@ -180,9 +210,10 @@ class: fifty-fifty
 
 .right-panel[
 - Jamstack hosted on Netlify
-- Shared CI/CD pipeline
-- Legacy code is iframed into new Console
-- Everything is an "Application Package"
+- Monorepo!
+  - Shared CI/CD pipeline
+  - Console 2.0 code is iframed into new Console
+  - Everything is an "Application Package"
 ]
 
 ???
@@ -198,35 +229,27 @@ class: fifty-fifty
 
 class: middle
 
-# New Console: Impact
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-screenshot.png" alt="Twilio Console Screenshot" width="90%" />
+
+???
+
+- lots of products the make up different parts of the .twilio[Twilio] platform
 
 ---
 
-class: fifty-fifty
+class: middle
 
-.left-panel[
-# Performance Improvements
-]
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-app-screenshot.png" alt="Twilio Numbers App" width="90%" />
 
-.right-panel[
-- TTFB (global)
-- Initial Page Load (global)
-- Eliminated full page refresh
-]
+???
+
+- each product is its own app, most of which are maintained by 1 or more teams
 
 ---
 
-class: fifty-fifty
+class: middle
 
-.left-panel[
-# Increased Development Velocity
-]
-
-.right-panel[
-- Small changes multiple times per day > weekly bulk changes
-- Preview deployments = ∞ staging environments
-- More focus on solving customer problems
-]
+# Console 3.0: Impact
 
 ---
 
@@ -250,6 +273,49 @@ class: fifty-fifty
 
 ---
 
+
+class: fifty-fifty
+
+.left-panel[
+# Performance Improvements
+]
+
+.right-panel[
+- TTFB (global)
+- Initial Page Load (global)
+- Eliminated full page refresh
+]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# Shared Governance
+]
+
+.right-panel[
+- Many decisions impact multiple teams, sometimes everyone
+- Key stakeholders from teams help make decisions
+- Document decisions as we go
+]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+# Increased Development Velocity
+]
+
+.right-panel[
+- Weekly bulk changes < small changes multiple times per day
+- Preview deployments = ∞ staging environments
+- **More focus on solving customer problems**
+]
+
+---
+
 class: middle
 
 # Closing
@@ -265,3 +331,9 @@ class: middle, inverse
 - Other teams working outside the Console are starting to plan their migration to a Jamstack architecture
 - The Console is moving towards a truely global presence to meet our customers where they are
 - It a deeper focus on solving problems for our customers
+
+---
+
+class: middle
+
+# More time to focus on our customers!
