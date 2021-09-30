@@ -20,24 +20,6 @@ class: fifty-fifty
 
 .left-panel[
 
-# Intro
-
-]
-
-.right-panel[
-
-- What is the .twilio[Twilio] Console
-- Legacy Console and Issues
-- New Console and Impact
-
-]
-
----
-
-class: fifty-fifty
-
-.left-panel[
-
 # Harrison Harnisch
 
 ]
@@ -55,6 +37,25 @@ class: fifty-fifty
 ### [@hjharnis](https://twitter.com/hjharnis)
 
 ]
+
+---
+
+class: fifty-fifty
+
+.left-panel[
+
+# Intro
+
+]
+
+.right-panel[
+
+- What is the .twilio[Twilio] Console
+- Legacy Console and Issues
+- New Console and Impact
+
+]
+
 
 ---
 
@@ -84,7 +85,7 @@ class: fifty-fifty
 
 .left-panel[
 # Console 1.0
-## c. 2008
+### c. 2008
 ]
 
 .right-panel[
@@ -97,7 +98,7 @@ class: fifty-fifty
 
 class: middle
 
-<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-original.png" alt="Twilio Console Screenshot" width="90%" />
+<img src="/images/slides/twilio-console-jamstack-migration/twilio-console-original.png" alt="Twilio Console Screenshot" width="50%" />
 
 ---
 
@@ -220,6 +221,7 @@ class: inverse, middle
 class: middle
 
 # Console 3.0
+### c. 2021
 
 ???
 
